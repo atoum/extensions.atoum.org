@@ -31,6 +31,10 @@ class Parser extends \Parsedown
             $inline['element']['attributes']['src'] = dirname($this->extension['url']) . '/' . $src;
         }
 
+        $inline['element']['attributes']['data-src'] = $inline['element']['attributes']['src'];
+        $inline['element']['attributes']['src'] = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
+        $inline['element']['attributes']['onload'] = "lzld(this)";
+
         return $inline;
     }
 }

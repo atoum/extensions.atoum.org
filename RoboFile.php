@@ -45,23 +45,32 @@ class RoboFile extends \Robo\Tasks
     {
         $this->say("Starting JS rebuild");
 
-        $this
-            ->taskConcat([
+        $types = [
+            'critical' => [
+                'vendor/bower-asset/lazyload/build/lazyload.js',
+            ],
+            'main' => [
                 'vendor/bower-asset/highlightjs/highlight.pack.js',
                 'ressources/assets/js/main.js',
-            ])
-            ->to($cacheFile = 'web/js/main.js')
-            ->run()
-        ;
+            ],
+        ];
 
-        $this
-            ->taskMinify($cacheFile)
-            ->keepImportantComments(false)
-            ->to($webFile = 'web/js/main.js')
-            ->run()
-        ;
+        foreach ($types as $type => $files) {
+            $this
+                ->taskConcat($files)
+                ->to($cacheFile = sprintf('web/js/%s.js', $type))
+                ->run()
+            ;
 
-        $this->taskHash($webFile)->to('web/js/')->run();
+            $this
+                ->taskMinify($cacheFile)
+                ->keepImportantComments(false)
+                ->to($webFile = sprintf('web/js/%s.js', $type))
+                ->run()
+            ;
+
+            $this->taskHash($webFile)->to('web/js/')->run();
+        }
 
         $this->say("JS rebuilt successfully!");
     }

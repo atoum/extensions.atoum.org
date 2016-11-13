@@ -6,6 +6,7 @@
         "agallou/robo-hash": "^0.0.1",
         "agallou/twig-hashed-file-extension": "^0.1.0",
         "bower-asset/highlightjs": "^9.8",
+        "bower-asset/lazyload": "^3.2",
         "codegyre/robo": "^0.7.2",
         "erusev/parsedown": "^1.6",
         "fxp/composer-asset-plugin": "^1.2",
