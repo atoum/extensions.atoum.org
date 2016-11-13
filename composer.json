@@ -1,0 +1,33 @@
+{
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^5.5.9|^7.0",
+        "agallou/robo-hash": "^0.0.1",
+        "agallou/twig-hashed-file-extension": "^0.1.0",
+        "bower-asset/highlightjs": "^9.8",
+        "codegyre/robo": "^0.7.2",
+        "erusev/parsedown": "^1.6",
+        "fxp/composer-asset-plugin": "^1.2",
+        "leafo/scssphp": "^0.6.6",
+        "natxet/CssMin": "^3.0",
+        "patchwork/jsqueeze": "^2.0",
+        "slim/slim": "^3.0",
+        "symfony/yaml": "^3.1",
+        "twig/twig": "^1"
+    },
+    "autoload": {
+        "psr-4": {
+            "atoum\\ExtensionsWebsite\\": "src/"
+        }
+    },
+    "config": {
+        "process-timeout": 36000
+    },
+    "scripts": {
+        "web": "php -S 0.0.0.0:8000 -t web/ web/index.php",
+        "post-install-cmd": [
+            "./vendor/bin/robo build"
+        ]
+    }
+}

@@ -1,0 +1,51 @@
+-
+  label: "Official extensions"
+  extensions:
+    -
+      label: "autoloop"
+      url : "https://raw.githubusercontent.com/atoum/autoloop-extension/master/README.md"
+    -
+      label: "bdd"
+      url : "https://raw.githubusercontent.com/atoum/bdd-extension/master/README.md"
+    -
+      label: "blackfire"
+      url: "https://raw.githubusercontent.com/atoum/blackfire-extension/master/README.md"
+    -
+      label: "config"
+      url: "https://raw.githubusercontent.com/atoum/config-extension/master/README.md"
+    -
+      label: "deprecated"
+      url : "https://raw.githubusercontent.com/atoum/deprecated-extension/master/README.md"
+    -
+      label: "json-schema"
+      url: "https://raw.githubusercontent.com/atoum/json-schema-extension/master/README.md"
+    -
+      label: "phpunit"
+      url: "https://raw.githubusercontent.com/atoum/phpunit-extension/master/README.md"
+    -
+      label: "prophecy"
+      url: "https://raw.githubusercontent.com/atoum/prophecy-extension/master/README.md"
+    -
+      label: "reports"
+      url: "https://raw.githubusercontent.com/atoum/reports-extension/master/README.md"
+    -
+      label: "ruler"
+      url: "https://raw.githubusercontent.com/atoum/ruler-extension/master/README.md"
+    -
+      label: "telemetry"
+      url: "https://raw.githubusercontent.com/atoum/telemetry-extension/master/README.md"
+    -
+      label: "visibility"
+      url: "https://raw.githubusercontent.com/atoum/visibility-extension/master/README.md"
+-
+  label: "Community extensions"
+  extensions:
+    -
+      label: "symfony-di"
+      url: "https://raw.githubusercontent.com/jdecool/atoum-symfony-di/master/README.md"
+    -
+      label: "vw"
+      url: "https://raw.githubusercontent.com/agallou/vw-extension/master/README.md"
+    -
+      label: "xml"
+      url: "https://raw.githubusercontent.com/shulard/atoum-xml-extension/master/README.md"

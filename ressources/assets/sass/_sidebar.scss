@@ -1,0 +1,16 @@
+.sidebar {
+  background-color: #343131;
+  overflow-y: auto;
+  left: 200px !important;
+  position: fixed;
+  height: 100%;
+  width: 300px;
+
+  > ul {
+    padding: 0 40px 40px 40px;
+
+    > li > ul {
+      margin: 10px 0 40px;
+    }
+  }
+}

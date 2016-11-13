@@ -1,0 +1,38 @@
+.extension-list {
+
+  > ul {
+    > li {
+      > ul {
+        > li {
+          > a {
+            color: #b3b3b3;
+            &.active,
+            &:hover {
+              background-color: #ededed;
+            }
+          }
+        }
+      }
+
+      > span {
+        color: #b3b3b3;
+        text-decoration: underline;
+      }
+    }
+
+    ul {
+      li {
+        a {
+          display: block;
+          margin: 0 -40px 0;
+          padding: 9px 40px;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  ul  {
+    list-style: none;
+  }
+}

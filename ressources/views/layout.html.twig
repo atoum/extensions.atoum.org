@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>atoum's extensions</title>
+
+        <link rel="stylesheet" href="{{ hashed_file('css/main.css') }}" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        {{ include('menu.html.twig') }}
+
+        <div class="main">
+            {{ include('sidebar.html.twig') }}
+
+            <div class="extension-content">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+
+        <script src="{{ hashed_file('js/main.js') }}"></script>
+    </body>
+</html>

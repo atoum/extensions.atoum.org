@@ -1,0 +1,83 @@
+#menu {
+  position: fixed;
+  top: 0;
+  left: -50px;
+  height: 100vh;
+  width: 250px;
+}
+
+#menu[aria-selected='true'] {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+}
+
+#menu > ul {
+  display: table;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#menu > ul > li {
+  display: table-row;
+}
+
+#menu > ul > li::before {
+  content: '';
+}
+
+#menu > ul > li > a {
+  display: table-cell;
+  vertical-align: middle;
+  color: #f0e9dd;
+  font-variant: all-small-caps;
+  text-decoration: none;
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+#menu > ul > li > a > img {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+@media all and (max-height: 450px) {
+  nav > ul > li > a > img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-left: .5em;
+    float: left;
+  }
+}
+
+#nav-features {
+  background: rgba(131, 93, 91, .6);
+}
+
+#nav-source {
+  background: rgba(162, 107, 97, .6);
+}
+
+#nav-documentation {
+  background: rgba(227, 143, 113, .6);
+}
+
+#nav-extensions {
+  background: rgba(252, 218, 186, .6);
+}
+
+#nav-posts {
+  background: rgba(240, 178, 112, .6);
+}
+
+#nav-about {
+  background: rgba(111, 95, 93, .6);
+}
+
+#nav-telemetry {
+  background: rgba(187, 73, 68, 0.6);
+}
