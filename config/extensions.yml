@@ -4,48 +4,63 @@
     -
       label: "autoloop"
       url : "https://raw.githubusercontent.com/atoum/autoloop-extension/master/README.md"
+      github_link: "http://github.com/atoum/autoloop-extension"
     -
       label: "bdd"
       url : "https://raw.githubusercontent.com/atoum/bdd-extension/master/README.md"
+      github_link: "http://github.com/atoum/bdd-extension"
     -
       label: "blackfire"
       url: "https://raw.githubusercontent.com/atoum/blackfire-extension/master/README.md"
+      github_link: "http://github.com/atoum/blackfire-extension"
     -
       label: "config"
       url: "https://raw.githubusercontent.com/atoum/config-extension/master/README.md"
+      github_link: "http://github.com/atoum/config-extension"
     -
       label: "deprecated"
       url : "https://raw.githubusercontent.com/atoum/deprecated-extension/master/README.md"
+      github_link: "http://github.com/atoum/deprecated-extension"
     -
       label: "json-schema"
       url: "https://raw.githubusercontent.com/atoum/json-schema-extension/master/README.md"
+      github_link: "http://github.com/atoum/json-schema-extension"
     -
       label: "phpunit"
       url: "https://raw.githubusercontent.com/atoum/phpunit-extension/master/README.md"
+      github_link: "http://github.com/atoum/phpunit-extension"
     -
       label: "prophecy"
       url: "https://raw.githubusercontent.com/atoum/prophecy-extension/master/README.md"
+      github_link: "http://github.com/atoum/prophecy-extension"
     -
       label: "reports"
       url: "https://raw.githubusercontent.com/atoum/reports-extension/master/README.md"
+      github_link: "http://github.com/atoum/reports-extension"
     -
       label: "ruler"
       url: "https://raw.githubusercontent.com/atoum/ruler-extension/master/README.md"
+      github_link: "http://github.com/atoum/ruler-extension"
     -
       label: "telemetry"
       url: "https://raw.githubusercontent.com/atoum/telemetry-extension/master/README.md"
+      github_link: "http://github.com/atoum/telemetry-extension"
     -
       label: "visibility"
       url: "https://raw.githubusercontent.com/atoum/visibility-extension/master/README.md"
+      github_link: "http://github.com/atoum/visibility-extension"
 -
   label: "Community extensions"
   extensions:
     -
       label: "symfony-di"
       url: "https://raw.githubusercontent.com/jdecool/atoum-symfony-di/master/README.md"
+      github_link: "http://github.com/jdecool/atoum-symfony-di"
     -
       label: "vw"
       url: "https://raw.githubusercontent.com/agallou/vw-extension/master/README.md"
+      github_link: "http://github.com/agallou/vw-extension"
     -
       label: "xml"
       url: "https://raw.githubusercontent.com/shulard/atoum-xml-extension/master/README.md"
+      github_link: "http://github.com/shulard/atoum-xml-extension"

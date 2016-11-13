@@ -37,4 +37,16 @@ class Parser extends \Parsedown
 
         return $inline;
     }
+
+    protected function blockHeader($Line)
+    {
+        $inline = parent::blockHeader($Line);
+
+        if ($inline['element']['name'] == 'h1' && isset($this->extension['github_link'])) {
+            $inline['element']['text'] = '<a href="' . $this->extension['github_link'] . '" class="github-link"><img src="/assets/github-icon.svg" /></a> ' . $inline['element']['text'];
+        }
+
+        return $inline;
+    }
+
 }
