@@ -39,8 +39,11 @@ class App extends \DI\Bridge\Slim\App
             'twig.globals' => function (ContainerInterface $container) {
                 return [
                     'extensions_groups' => $container->get(ExtensionsRepository::class)->getExtensionsGroups(),
+                    'ga_ua' => $container->get('ga_ua'),
                 ];
             },
+
+            'ga_ua' => \DI\env('GA_UA', false),
 
             ExtensionsRepository::class => function (ContainerInterface $container) {
                 $extensionsGroups = Yaml::parse(file_get_contents(__DIR__ . '/../config/extensions.yml'));
