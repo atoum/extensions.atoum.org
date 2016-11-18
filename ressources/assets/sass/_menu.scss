@@ -1,14 +1,5 @@
 #menu {
-  position: fixed;
-  top: 0;
-  left: -50px;
-  height: 100vh;
-  width: 250px;
-}
-
-#menu[aria-selected='true'] {
-  transform: translateX(0);
-  -webkit-transform: translateX(0);
+  background-color: rgba(111, 95, 93, 1);
 }
 
 #menu > ul {
@@ -32,7 +23,6 @@
   color: #f0e9dd;
   font-variant: all-small-caps;
   text-decoration: none;
-  padding-left: 50px;
   cursor: pointer;
 }
 

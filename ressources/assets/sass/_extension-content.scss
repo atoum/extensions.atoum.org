@@ -1,8 +1,8 @@
 .extension-content {
   background-color: #fafafa;
-  margin-left: 500px;
+  margin-left: 0;
   max-width: 850px;
-  padding: 0 50px 80px;
+  padding: 0 25px 80px;
 
   h1,
   h2,
@@ -22,8 +22,9 @@
     color: #fff;
     font-size: 1.6em !important;
     font-weight: 400;
-    margin: 0px -50px 30px -50px;
-    padding: 15px 50px;
+    margin: 0px -25px 30px -25px;
+    padding: 20px 30px 15px 30px;
+    text-align: center;
   }
 
   h1 + p {
@@ -79,9 +80,28 @@
 
 .github-link {
   margin: 0 10px 0 0;
+  display: none;
 
   img {
     height: 20px;
     padding: 0 10px;
+  }
+}
+
+
+@media all and (min-width: 800px) {
+  .extension-content {
+    margin-left: 500px;
+    padding: 0 50px 80px;
+
+    h1 {
+      margin: 0px -50px 30px -50px;
+      padding: 15px 50px;
+      text-align: left;
+    }
+
+    .github-link {
+      display: inline;
+    }
   }
 }
