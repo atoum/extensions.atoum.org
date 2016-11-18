@@ -52,6 +52,9 @@
 -
   label: "Community extensions"
   extensions:
+    - label: "praspel"
+      url: "https://raw.githubusercontent.com/hoaproject/Contributions-Atoum-PraspelExtension/master/README.md"
+      github_link: "https://github.com/hoaproject/Contributions-Atoum-PraspelExtension"
     -
       label: "symfony-di"
       url: "https://raw.githubusercontent.com/jdecool/atoum-symfony-di/master/README.md"
