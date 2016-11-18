@@ -26,7 +26,12 @@ class Parser extends \Parsedown
     {
         $inline = parent::inlineImage($Excerpt);
 
+        if (null === $inline) {
+            return $inline;
+        }
+
         $src = $inline['element']['attributes']['src'];
+
         if (0 !== strpos($src, 'http')) {
             $inline['element']['attributes']['src'] = dirname($this->extension['url']) . '/' . $src;
         }
