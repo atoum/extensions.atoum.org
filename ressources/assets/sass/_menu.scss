@@ -165,6 +165,7 @@ $atoum-menu-mobile-width: 300px;
   @extend %atoum-menu-secondary;
   display: none;
   margin-left: $atoum-menu-desktop-primary-width;
+  overflow-y: hidden;
   width: 300px;
 }
 

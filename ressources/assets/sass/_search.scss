@@ -1,0 +1,26 @@
+.algolia-autocomplete.algolia-autocomplete-left .ds-dropdown-menu {
+  left: 520px !important;
+  right: inherit !important;
+  max-width: 700px;
+  position: fixed !important;
+  top: 50px !important;
+}
+.algolia-autocomplete.algolia-autocomplete-left .ds-dropdown-menu::before {
+  left: -7px;
+  top: 70px;
+  transform: rotate(-135deg);
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--category-header {
+  background-color: rgba(131, 93, 91, .2);
+  padding: 0 5px;
+}
+
+body.search-column .algolia-autocomplete {
+  width: 90%;
+  transition: width 0.5s ease;
+}
+
+body.search-focused .algolia-autocomplete {
+  width: 100%;
+}
