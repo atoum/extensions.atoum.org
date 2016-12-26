@@ -7,12 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>atoum's extensions</title>
 
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
         <link rel="stylesheet" href="{{ hashed_file('css/main.css') }}" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
         {{ include('ga.html.twig') }}
     </head>
-    <body>
+    <body class="search-column">
         {{ include('menu.html.twig') }}
 
         <div class="main">
@@ -22,5 +23,7 @@
         </div>
 
         <script src="{{ hashed_file('js/main.js') }}"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+        {{ include('algolia.html.twig') }}
     </body>
 </html>

@@ -1,0 +1,27 @@
+.secondary-menu-header {
+  background: url('/assets/images/background.jpg') repeat fixed 0% 0% / cover transparent;
+  padding: 5px 12px 12px 12px;
+  text-align: center;
+
+  .secondary-menu-header--logo-link {
+    padding: 4px 6px;
+    display: block;
+  }
+
+  .secondary-menu-header--empty-translation-list {
+    margin: 10px 0;
+    height: 25px
+  }
+
+  .secondary-menu-header--logo {
+    padding: 5px;
+  }
+
+  .secondary-menu-header--search {
+    border: 1px solid #ccc;
+    font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+    font-size: 80%;
+    padding: 6px 12px;
+    width: 100%;
+  }
+}
