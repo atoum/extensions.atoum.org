@@ -33,6 +33,7 @@
         ]
     },
     "require-dev": {
-        "atoum/atoum": "^3.1"
+        "atoum/atoum": "^3.1",
+        "atoum/stubs": "^2.5"
     }
 }
