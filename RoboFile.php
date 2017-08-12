@@ -11,6 +11,13 @@ class RoboFile extends \Robo\Tasks
         $this->_buildJs();
     }
 
+    public function test()
+    {
+        $this->taskAtoum()
+		    ->directories(__DIR__ . '/tests/units/')
+		    ->run();
+    }
+
     protected function _buildCss()
     {
         $this->say("Starting CSS rebuild");

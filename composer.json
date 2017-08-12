@@ -31,5 +31,8 @@
         "post-install-cmd": [
             "./vendor/bin/robo build"
         ]
+    },
+    "require-dev": {
+        "atoum/atoum": "^3.1"
     }
 }
