@@ -8,8 +8,8 @@
 
     <div class="extension-list">
 
-        <ul>
-            {{ include('extension_list.html.twig') }}
+        <ul class="extension-home-list">
+	        {% include 'extension_list.html.twig' with {title_tag: 'h3'} %}
         </ul>
 
     </div>

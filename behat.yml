@@ -1,0 +1,25 @@
+default:
+  formatters:
+    pretty: true
+  autoload:
+    '': %paths.base%/tests/features/bootstrap
+  suites:
+    default:
+      paths:
+        - %paths.base%/tests/features/default/
+      contexts:
+        - FeatureContext
+        - Behat\MinkExtension\Context\MinkContext
+
+  extensions:
+    Behat\MinkExtension:
+      goutte: ~
+#      base_url: http://127.0.0.1:8000/
+      sessions:
+        default:
+#          goutte:
+#            guzzle_parameters:
+#              verify: false
+          psr7: ~
+    Cjm\Behat\Psr7Extension:
+      app: %paths.base%/tests/features/bootstrap/boot-behat.php

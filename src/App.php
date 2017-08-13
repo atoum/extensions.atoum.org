@@ -4,10 +4,12 @@ namespace atoum\ExtensionsWebsite;
 
 use atoum\ExtensionsWebsite\Repository\ExtensionsRepository;
 use DI\ContainerBuilder;
+use function DI\env;
 use Interop\Container\ContainerInterface;
 use Symfony\Component\Yaml\Yaml;
 use Twig_Environment;
 use Twig_Loader_Filesystem;
+use Agallou\TwigHashedFileExtension\Extension;
 
 class App extends \DI\Bridge\Slim\App
 {
@@ -17,17 +19,18 @@ class App extends \DI\Bridge\Slim\App
     protected function configureContainer(ContainerBuilder $builder)
     {
         $definitions = [
+        	'onProduction' => \DI\env('PHP_VERSION', false),
             'settings.addContentLengthHeader' => false,
             \Twig_Environment::class => function (ContainerInterface $container) {
                 $loader = new Twig_Loader_Filesystem(__DIR__ . '/../ressources/views');
 
                 $env = new Twig_Environment($loader, [
-                    'debug' => true,
-                    'cache' => false,
+                    'debug' => ! $container->get('onProduction'),
+                    'cache' => $container->get('onProduction') ? (__DIR__ . '/../cache/views') : false,
                     'strict_variables' => false,
                 ]);
 
-                $env->addExtension(new \Agallou\TwigHashedFileExtension\Extension(__DIR__ . '/../web/', null));
+                $env->addExtension(new Extension(__DIR__ . '/../web/', null));
 
                 foreach ($container->get('twig.globals') as $name => $value) {
                     $env->addGlobal($name, $value);
