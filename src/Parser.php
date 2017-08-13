@@ -14,6 +14,7 @@ class Parser extends \Parsedown
      */
     public function __construct(array $extension)
     {
+    	$this->setMarkupEscaped(true);
         $this->extension = $extension;
     }
 
