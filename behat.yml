@@ -14,12 +14,8 @@ default:
   extensions:
     Behat\MinkExtension:
       goutte: ~
-#      base_url: http://127.0.0.1:8000/
       sessions:
         default:
-#          goutte:
-#            guzzle_parameters:
-#              verify: false
           psr7: ~
     Cjm\Behat\Psr7Extension:
       app: %paths.base%/tests/features/bootstrap/boot-behat.php

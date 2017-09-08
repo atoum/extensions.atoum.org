@@ -1,6 +1,6 @@
 This repository is the source files for [http://extensions.atoum.org](http://extensions.atoum.org).
 
-The purpose is to list extension of atoum and expose it.
+The purpose is to list extensions of atoum and expose it.
 
 ## Adding a new extension
 
@@ -22,7 +22,8 @@ vendor/bin/robo build
 ### Test
 
 ```
-vendor/bin/robo test
+vendor/bin/atoum
+vendor/bin/behat
 ```
 
 ### Run
