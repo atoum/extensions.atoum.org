@@ -57,6 +57,10 @@
       url: "https://raw.githubusercontent.com/Grummfy/atoum-ide-helper-extension/master/README.md"
       github_link: "https://github.com/Grummfy/atoum-ide-helper-extension"
     -
+      label: "atoum-teamcity"
+      url: "https://raw.githubusercontent.com/Hywan/atoum-teamcity-extension/master/README.md"
+      github_link: "https://github.com/Hywan/atoum-teamcity-extension"
+    -
       label: "praspel"
       url: "https://raw.githubusercontent.com/hoaproject/Contributions-Atoum-PraspelExtension/master/README.md"
       github_link: "https://github.com/hoaproject/Contributions-Atoum-PraspelExtension"
