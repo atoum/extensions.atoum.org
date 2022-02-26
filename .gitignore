@@ -1,4 +1,4 @@
 /vendor/
 /cache/
-/web/css/
-/web/js/
+/source/assets/js
+/source/assets/css

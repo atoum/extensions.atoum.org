@@ -1,0 +1,14 @@
+<li>
+    <span>Official extensionsa</span>
+    <ul>
+        {% for extension in data.official_extensions %}
+            <li><a {% if page.title is defined and extension.title == page.title %}class="active"{% endif %} href="{{ site.url }}/extensions/{{ extension.title }}">{{ extension.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <span>Community extensions</span>
+    <ul>
+        {% for extension in data.community_extensions %}
+            <li><a {% if page.title is defined and extension.title == page.title %}class="active"{% endif %} href="{{ site.url }}/extensions/{{ extension.title }}">{{ extension.title }}</a></li>
+        {% endfor %}
+    </ul>
+</li>
