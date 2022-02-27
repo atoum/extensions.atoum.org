@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  # en UTF, cf https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
+  schedule:
+    - cron: '45 7 * * 2'
+
+jobs:
+
+  build:
+    name: "Build"
+    runs-on: ubuntu-20.04
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup PHP with tools
+        uses: shivammathur/setup-php@v2
+        with:
+          tools: composer:v2
+          php-version: '7.4'
+
+      - name: Composer - Get Cache Directory
+        id: composer-cache
+        run: echo "::set-output name=dir::$(composer config cache-files-dir)"
+
+      - uses: actions/cache@v1
+        id: cache-composer
+        with:
+          path: ${{ steps.composer-cache.outputs.dir }}
+          key: composer-php.7.1-${{ github.sha }}
+          restore-keys: composer-php.7.1-
+
+      - name: Composer - Create cache directory
+        run: mkdir -p /home/runner/.composer/cache
+        if: steps.cache-composer.outputs.cache-hit != 'true'
+
+      - name: Composer install
+        run: composer install --no-scripts
+
+      - name: Build assets
+        run: ./vendor/bin/robo build
+
+      - name: Build website
+        run: ./vendor/bin/sculpin generate --clean --no-interaction
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@v4.2.3
+        with:
+          branch: gh-pages
+          folder: output_dev

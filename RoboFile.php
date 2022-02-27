@@ -16,8 +16,8 @@ class RoboFile extends \Robo\Tasks
         $this->say("Starting CSS rebuild");
 
         $this
-            ->taskScss(['ressources/assets/sass/main.scss' => 'cache/assets/sass/main_sass.css'])
-            ->addImportPath('ressources/assets/sass/')
+            ->taskScss(['ressources/sass/main.scss' => 'cache/assets/sass/main_sass.css'])
+            ->addImportPath('ressources/sass/')
             ->run()
         ;
 
@@ -36,7 +36,7 @@ class RoboFile extends \Robo\Tasks
             ->run()
         ;
 
-        $this->taskHash('cache/main.css')->to('web/css/')->run();
+        $this->taskHash('cache/main.css')->to('source/assets/css/')->run();
 
         $this->say("CSS rebuilt successfully!");
     }
@@ -51,25 +51,25 @@ class RoboFile extends \Robo\Tasks
             ],
             'main' => [
                 'vendor/bower-asset/highlightjs/highlight.pack.js',
-                'ressources/assets/js/main.js',
+                'ressources/js/main.js',
             ],
         ];
 
         foreach ($types as $type => $files) {
             $this
                 ->taskConcat($files)
-                ->to($cacheFile = sprintf('web/js/%s.js', $type))
+                ->to($cacheFile = sprintf('source/assets/js/%s.js', $type))
                 ->run()
             ;
 
             $this
                 ->taskMinify($cacheFile)
                 ->keepImportantComments(false)
-                ->to($webFile = sprintf('web/js/%s.js', $type))
+                ->to($webFile = sprintf('source/assets/js/%s.js', $type))
                 ->run()
             ;
 
-            $this->taskHash($webFile)->to('web/js/')->run();
+            $this->taskHash($webFile)->to('source/assets/js/')->run();
         }
 
         $this->say("JS rebuilt successfully!");
@@ -90,14 +90,14 @@ class RoboFile extends \Robo\Tasks
 
     protected function _cleanCss()
     {
-        $this->_mkdir('web/css');
-        $this->_cleanDir('web/css');
+        $this->_mkdir('source/assets/css');
+        $this->_cleanDir('source/assets/css');
         $this->_mkdir('cache/assets/sass');
     }
 
     protected function _cleanJs()
     {
-        $this->_mkdir('web/js');
-        $this->_cleanDir('web/js');
+        $this->_mkdir('source/assets/js');
+        $this->_cleanDir('source/assets/js');
     }
 }

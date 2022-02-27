@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="{{ site.url }}{{ hashed_file('assets/js/critical.js') }}"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{site.title}}</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+        <link rel="stylesheet" href="{{ site.url }}{{ hashed_file('assets/css/main.css') }}" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+        {{ include('ga.html.twig') }}
+    </head>
+    <body class="search-column">
+        {{ include('menu.html.twig') }}
+
+
+        <div class="main">
+            <div class="extension-content">
+                {% block content_wrapper %}{% block content '' %}{% endblock content_wrapper %}
+            </div>
+        </div>
+
+        <script src="{{ site.url }}{{ hashed_file('assets/js/main.js') }}"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+        {{ include('algolia.html.twig') }}
+    </body>
+</html>

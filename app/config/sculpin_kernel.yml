@@ -1,0 +1,19 @@
+sculpin_content_types:
+    posts:
+      enabled: false
+
+    official_extensions:
+        type: path
+        path: _extensions/official
+        singular_name: official_extension
+        layout: extension
+        enabled: true
+        permalink: extensions/:basename
+
+    community_extensions:
+        type: path
+        path: _extensions/community
+        singular_name: community_extension
+        layout: extension
+        enabled: true
+        permalink: extensions/:basename
