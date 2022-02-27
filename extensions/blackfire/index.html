@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="/assets/js/critical.951e71c3.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>atoum&#039;s extensions</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+        <link rel="stylesheet" href="/assets/css/main.6ae188f7.css" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+            <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-72192129-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    </head>
+    <body class="search-column">
+        <nav id="menu" class="atoum-menu--container atoum-menu--container__primary atoum-menu-desktop--primary">
+    <ul>
+        <li>
+            <a href="http://atoum.org/" id="nav-about">
+                <img src="/assets/images/icon/about.svg" />
+                about
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/features.html" id="nav-features">
+                <img src="/assets/images/icon/features.svg" />
+                features
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/sources.html" id="nav-source">
+                <img src="/assets/images/icon/source.svg" />
+                sources
+            </a>
+        </li>
+        <li>
+            <a href="http://docs.atoum.org/" id="nav-documentation">
+                <img src="/assets/images/icon/documentation.svg" />
+                documentation
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/news.html" id="nav-posts">
+                <img src="/assets/images/icon/news.svg" />
+                news
+            </a>
+        </li>
+        <li>
+            <a href="http://extensions.atoum.org" id="nav-extensions">
+                <img src="/assets/images/icon/puzzle.svg" />
+                extensions
+            </a>
+        </li>
+        <li>
+            <a href="https://dashboard.telemetry.atoum.org" id="nav-telemetry" target="telemetry">
+                <img src="/assets/images/icon/telemetry.svg" />
+                telemetry
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+
+<div class="atoum-menu-desktop--secondary extension-list">
+
+    <div class="secondary-menu-header">
+        <a class="secondary-menu-header--logo-link" href="/">
+            <img src="/assets/images/atoum.png"  width="61px" height="50px" class="secondary-menu-header--logo" />
+        </a>
+
+        <div class="secondary-menu-header--empty-translation-list"></div>
+
+        <input type="text" placeholder="Search" id="algolia-search" class="secondary-menu-header--search" onFocus="toggleSearch(true)" onBlur="toggleSearch(false)" />
+    </div>
+
+    <ul style="padding: 10px 0 0 0">
+        <li>
+    <span>Official extensionsa</span>
+    <ul>
+                    <li><a  href="/extensions/autoloop">autoloop</a></li>
+                    <li><a  href="/extensions/bdd">bdd</a></li>
+                    <li><a class="active" href="/extensions/blackfire">blackfire</a></li>
+                    <li><a  href="/extensions/config">config</a></li>
+                    <li><a  href="/extensions/deprecated">deprecated</a></li>
+                    <li><a  href="/extensions/json-schema">json-schema</a></li>
+                    <li><a  href="/extensions/phpunit">phpunit</a></li>
+                    <li><a  href="/extensions/prophecy">prophecy</a></li>
+                    <li><a  href="/extensions/reports">reports</a></li>
+                    <li><a  href="/extensions/ruler">ruler</a></li>
+                    <li><a  href="/extensions/telemetry">telemetry</a></li>
+                    <li><a  href="/extensions/visibility">visibility</a></li>
+            </ul>
+    <span>Community extensions</span>
+    <ul>
+                    <li><a  href="/extensions/atoum-ide-helper">atoum-ide-helper</a></li>
+                    <li><a  href="/extensions/atoum-teamcity">atoum-teamcity</a></li>
+                    <li><a  href="/extensions/praspel">praspel</a></li>
+                    <li><a  href="/extensions/symfony-di">symfony-di</a></li>
+                    <li><a  href="/extensions/vw">vw</a></li>
+                    <li><a  href="/extensions/xml">xml</a></li>
+            </ul>
+</li>
+
+    </ul>
+</div>
+
+<div class="atoum-menu--container atoum-menu--container__primary sidebar extension-list atoum-mobile-menu" id="sidebar">
+    <ul>
+        <li class="menu-item--brand">
+            <img src="http://atoum.org/images/logo/atoum.png"> atoum
+        </li>
+        <li id="nav-about" class="menu-item--primary" >
+            <a href="http://atoum.org/">
+                <img src="/assets/images/icon/about.svg"/>
+                about
+            </a>
+        </li>
+        <li id="nav-features" class="menu-item--primary">
+            <a href="http://atoum.org/features.html">
+                <img src="/assets/images/icon/features.svg" />
+                features
+            </a>
+        </li>
+        <li id="nav-source" class="menu-item--primary">
+            <a href="http://atoum.org/sources.html">
+                <img src="/assets/images/icon/source.svg" />
+                sources
+            </a>
+        </li>
+        <li id="nav-documentation" class="menu-item--primary">
+            <a href="http://docs.atoum.org/">
+                <img src="/assets/images/icon/documentation.svg" />
+                documentation
+            </a>
+        </li>
+        <li id="nav-posts" class="menu-item--primary">
+            <a href="http://atoum.org/news.html">
+                <img src="/assets/images/icon/news.svg" />
+                news
+            </a>
+        </li>
+        <li id="nav-telemetry" class="menu-item--primary">
+            <a href="https://dashboard.telemetry.atoum.org" target="telemetry">
+                <img src="/assets/images/icon/telemetry.svg" />
+                telemetry
+            </a>
+        </li>
+        <li id="nav-extensions" class="menu-item--primary menu-item--current">
+            <a href="http://extensions.atoum.org">
+                <img src="/assets/images/icon/puzzle.svg" />
+                extensions
+            </a>
+        </li>
+        <li>
+    <span>Official extensionsa</span>
+    <ul>
+                    <li><a  href="/extensions/autoloop">autoloop</a></li>
+                    <li><a  href="/extensions/bdd">bdd</a></li>
+                    <li><a class="active" href="/extensions/blackfire">blackfire</a></li>
+                    <li><a  href="/extensions/config">config</a></li>
+                    <li><a  href="/extensions/deprecated">deprecated</a></li>
+                    <li><a  href="/extensions/json-schema">json-schema</a></li>
+                    <li><a  href="/extensions/phpunit">phpunit</a></li>
+                    <li><a  href="/extensions/prophecy">prophecy</a></li>
+                    <li><a  href="/extensions/reports">reports</a></li>
+                    <li><a  href="/extensions/ruler">ruler</a></li>
+                    <li><a  href="/extensions/telemetry">telemetry</a></li>
+                    <li><a  href="/extensions/visibility">visibility</a></li>
+            </ul>
+    <span>Community extensions</span>
+    <ul>
+                    <li><a  href="/extensions/atoum-ide-helper">atoum-ide-helper</a></li>
+                    <li><a  href="/extensions/atoum-teamcity">atoum-teamcity</a></li>
+                    <li><a  href="/extensions/praspel">praspel</a></li>
+                    <li><a  href="/extensions/symfony-di">symfony-di</a></li>
+                    <li><a  href="/extensions/vw">vw</a></li>
+                    <li><a  href="/extensions/xml">xml</a></li>
+            </ul>
+</li>
+
+    </ul>
+</div>
+
+<div aria-controls="sidebar" onclick="toggleMenu(this)" class="atoum-menu--icon-container">
+    <svg viewBox="0 0 100 100" class="atoum-menu--icon">
+        <title>Open menu icon</title>
+        <desc>N-ARY CIRCLED PLUS OPERATOR</desc>
+
+        <circle cx="50" cy="50" r="40" />
+        <line x1="20" y1="50" x2="80" y2="50" transform="rotate(90 50 50)" />
+        <line x1="20" y1="50" x2="80" y2="50" />
+    </svg>
+</div>
+
+
+
+
+        <div class="main">
+            <div class="extension-content">
+                
+    <h1><a href="https://github.com/atoum/blackfire-extension" class="github-link"><img src="/assets/github-icon.svg" /></a> atoum/blackfire-extension <a href="https://travis-ci.org/atoum/blackfire-extension"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Build Status" data-src="https://travis-ci.org/atoum/blackfire-extension.svg?branch=master" onload="lzld(this)" /></a></h1>
+<p>blackfire-extension allows you to use blackfire assertions inside <a href="https://github.com/atoum/atoum">atoum</a>.</p>
+<p>The Blackfire PHP-SDK has a built-in <a href="https://blackfire.io/docs/integrations/phpunit">PHPUnit integration</a>. This extension does the same, but for atoum.</p>
+<h2>Example</h2>
+<p>Let's take this example.</p>
+<pre><code class="language-php">namespace Tests\Units;
+
+use Example as TestedClass;
+
+use atoum;
+
+class Example extends atoum
+{
+    public function testExemple()
+    {
+        $this
+            -&gt;blackfire
+                -&gt;assert('main.wall_time &lt; 2s', "Temps d'execution")
+                -&gt;profile(function() {
+                    sleep(4); //just to make the test fail
+
+                    //some code to profile
+                    // ...
+
+                    //you also can run atoum assertions inside this callable
+                    //but beware, atoum's logic will also be profiled.
+                    $this-&gt;boolean(true)-&gt;isTrue();
+                })
+        ;
+    }
+}
+</code></pre>
+<p>When running this test, the callback will be automatically instrumented and execute on Blackfire the assertions defined by the Configuration. If they fail, an atoum error will be displayed.The above example will have this output : </p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Instrumentation result" data-src="./doc/screenshot.png" onload="lzld(this)" /></p>
+<h2>Install it</h2>
+<p>Install extension using <a href="https://getcomposer.org">composer</a>:</p>
+<pre><code>composer require --dev atoum/blackfire-extension</code></pre>
+<p>Enable and configure the extension using atoum configuration file:</p>
+<pre><code class="language-php">&lt;?php
+
+// .atoum.php
+
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+
+$runner
+    -&gt;getExtension(mageekguy\atoum\blackfire\extension::class)
+    -&gt;setClientConfiguration(new \Blackfire\ClientConfiguration($_ENV['BLACKFIRE_CLIENT_ID'], $_ENV['BLACKFIRE_CLIENT_TOKEN']))
+    -&gt;addToRunner($runner)
+;</code></pre>
+<h2>Other examples</h2>
+<h3>Define custom metrics</h3>
+<pre><code class="language-php">$this
+    -&gt;blackfire
+        -&gt;defineMetric(new \Blackfire\Profile\Metric("example_method_calls", "=Example::method"))
+        -&gt;assert("metrics.example_method_calls.count &lt; 10")
+        -&gt;profile(function() {
+            $testedClass = new TestedClass();
+            for ($i = 0; $i &lt; 8; $i++) {
+                $testedClass-&gt;method();
+            }
+        })
+;</code></pre>
+<p>You can learn more about this on the <a href="https://blackfire.io/docs/reference-guide/metrics#custom-metrics">custom metric</a>'s section of Blackfire documentation.</p>
+<h3>Pass your own profile configuration</h3>
+<pre><code class="language-php">$this
+    -&gt;given(
+        $profileConfiguration = new \Blackfire\Profile\Configuration(),
+        $profileConfiguration-&gt;setTitle('Profile configuration title'),
+        $testedClass = new TestedClass()
+    )
+    -&gt;blackfire
+        -&gt;setConfiguration($profileConfiguration)
+        -&gt;assert("main.peak_memory &lt; 10mb")
+        -&gt;profile(function() use ($testedClass) {
+            $testedClass-&gt;method();
+        })
+;</code></pre>
+<p>You can learn more about this on the <a href="https://blackfire.io/docs/reference-guide/php-sdk#profile-basic-configuration">profile basic configurable</a>'s section of Blackfire documentation.</p>
+<h3>Pass a custom client</h3>
+<p>You can either pass the blackfire client in the <code>.atoum.php</code> config file (when loading the extension). In that case the client will be used in all the blackfire assertions. You also can load/overload it in the <code>blackfire</code> assert. For example:</p>
+<pre><code class="language-php">$this
+    -&gt;given(
+      $config = new \Blackfire\ClientConfiguration($_ENV['BLACKFIRE_CLIENT_ID'], $_ENV['BLACKFIRE_CLIENT_TOKEN']);
+      $client = new \Blackfire\Client($config);
+    )
+    -&gt;blackfire(client)
+        -&gt;assert('main.wall_time &lt; 2s')
+        -&gt;profile(function() {
+            //code to profile
+        })
+;</code></pre>
+<h2>Test filtering</h2>
+<p>To avoid running the test if the blackfire extension is not loaded, you can use the <code>@extensions</code> annotation.</p>
+<pre><code class="language-php">    /**
+     * @extensions blackfire
+     */
+    public function testExemple()
+    {
+        $this
+            -&gt;blackfire($this-&gt;getBlackfireClient())
+                -&gt;defineMetric(new \Blackfire\Profile\Metric("example_method_calls", "=Example::method"))
+                -&gt;assert("metrics.example_method_calls.count &lt; 10")
+                -&gt;profile(function() {
+                    $testedClass = new TestedClass();
+                    for ($i = 0; $i &lt; 8; $i++) {
+                        $testedClass-&gt;method();
+                    }
+                })
+        ;
+    }</code></pre>
+<p>You can add this annotation on both the test method or the test class.</p>
+<p>Then, when running the test, the classes/methods with this annotation will be skipped if the extension is not present/loaded:</p>
+<pre><code>Success (1 test, 0/1 method, 0 void method, 1 skipped method, 0 assertion)!
+&gt; There is 1 skipped method:
+=&gt; Tests\Units\Example::testExemple(): PHP extension 'blackfire' is not loaded</code></pre>
+<p>You also can use <a href="http://docs.atoum.org/en/latest/launch_test.html#tags">atoum's tags</a> and the <a href="https://github.com/atoum/ruler-extension">ruler extension</a> to only run the blackfire tests.</p>
+<h2>Links</h2>
+<ul>
+<li><a href="https://blackfire.io">Blackfire.io</a></li>
+<li><a href="https://blackfire.io/docs/introduction">Blackfire's documentation</a></li>
+<li><a href="https://github.com/blackfireio/php-sdk">Blackfire PHP-SDK</a></li>
+<li><a href="http://atoum.org">atoum</a></li>
+<li><a href="http://docs.atoum.org">atoum's documentation</a></li>
+</ul>
+<h2>Licence</h2>
+<p>blackfire-extension is released under the MIT License. See the bundled LICENSE file for details.</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="atoum" data-src="http://atoum.org/images/logo/atoum.png" onload="lzld(this)" /></p>
+
+            </div>
+        </div>
+
+        <script src="/assets/js/main.bfce05ce.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+        <script type="text/javascript">
+    docsearch({
+        apiKey: '0f252c26c36d6ef21fb74be147e94b14',
+        indexName: 'atoum',
+        inputSelector: '#algolia-search',
+        algoliaOptions: { 'facetFilters': [["language:en", 'tags:extensions']] },
+        debug: false
+    });
+</script>
+
+    </body>
+</html>

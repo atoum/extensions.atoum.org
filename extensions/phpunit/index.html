@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="/assets/js/critical.951e71c3.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>atoum&#039;s extensions</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+        <link rel="stylesheet" href="/assets/css/main.6ae188f7.css" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+            <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-72192129-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    </head>
+    <body class="search-column">
+        <nav id="menu" class="atoum-menu--container atoum-menu--container__primary atoum-menu-desktop--primary">
+    <ul>
+        <li>
+            <a href="http://atoum.org/" id="nav-about">
+                <img src="/assets/images/icon/about.svg" />
+                about
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/features.html" id="nav-features">
+                <img src="/assets/images/icon/features.svg" />
+                features
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/sources.html" id="nav-source">
+                <img src="/assets/images/icon/source.svg" />
+                sources
+            </a>
+        </li>
+        <li>
+            <a href="http://docs.atoum.org/" id="nav-documentation">
+                <img src="/assets/images/icon/documentation.svg" />
+                documentation
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/news.html" id="nav-posts">
+                <img src="/assets/images/icon/news.svg" />
+                news
+            </a>
+        </li>
+        <li>
+            <a href="http://extensions.atoum.org" id="nav-extensions">
+                <img src="/assets/images/icon/puzzle.svg" />
+                extensions
+            </a>
+        </li>
+        <li>
+            <a href="https://dashboard.telemetry.atoum.org" id="nav-telemetry" target="telemetry">
+                <img src="/assets/images/icon/telemetry.svg" />
+                telemetry
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+
+<div class="atoum-menu-desktop--secondary extension-list">
+
+    <div class="secondary-menu-header">
+        <a class="secondary-menu-header--logo-link" href="/">
+            <img src="/assets/images/atoum.png"  width="61px" height="50px" class="secondary-menu-header--logo" />
+        </a>
+
+        <div class="secondary-menu-header--empty-translation-list"></div>
+
+        <input type="text" placeholder="Search" id="algolia-search" class="secondary-menu-header--search" onFocus="toggleSearch(true)" onBlur="toggleSearch(false)" />
+    </div>
+
+    <ul style="padding: 10px 0 0 0">
+        <li>
+    <span>Official extensionsa</span>
+    <ul>
+                    <li><a  href="/extensions/autoloop">autoloop</a></li>
+                    <li><a  href="/extensions/bdd">bdd</a></li>
+                    <li><a  href="/extensions/blackfire">blackfire</a></li>
+                    <li><a  href="/extensions/config">config</a></li>
+                    <li><a  href="/extensions/deprecated">deprecated</a></li>
+                    <li><a  href="/extensions/json-schema">json-schema</a></li>
+                    <li><a class="active" href="/extensions/phpunit">phpunit</a></li>
+                    <li><a  href="/extensions/prophecy">prophecy</a></li>
+                    <li><a  href="/extensions/reports">reports</a></li>
+                    <li><a  href="/extensions/ruler">ruler</a></li>
+                    <li><a  href="/extensions/telemetry">telemetry</a></li>
+                    <li><a  href="/extensions/visibility">visibility</a></li>
+            </ul>
+    <span>Community extensions</span>
+    <ul>
+                    <li><a  href="/extensions/atoum-ide-helper">atoum-ide-helper</a></li>
+                    <li><a  href="/extensions/atoum-teamcity">atoum-teamcity</a></li>
+                    <li><a  href="/extensions/praspel">praspel</a></li>
+                    <li><a  href="/extensions/symfony-di">symfony-di</a></li>
+                    <li><a  href="/extensions/vw">vw</a></li>
+                    <li><a  href="/extensions/xml">xml</a></li>
+            </ul>
+</li>
+
+    </ul>
+</div>
+
+<div class="atoum-menu--container atoum-menu--container__primary sidebar extension-list atoum-mobile-menu" id="sidebar">
+    <ul>
+        <li class="menu-item--brand">
+            <img src="http://atoum.org/images/logo/atoum.png"> atoum
+        </li>
+        <li id="nav-about" class="menu-item--primary" >
+            <a href="http://atoum.org/">
+                <img src="/assets/images/icon/about.svg"/>
+                about
+            </a>
+        </li>
+        <li id="nav-features" class="menu-item--primary">
+            <a href="http://atoum.org/features.html">
+                <img src="/assets/images/icon/features.svg" />
+                features
+            </a>
+        </li>
+        <li id="nav-source" class="menu-item--primary">
+            <a href="http://atoum.org/sources.html">
+                <img src="/assets/images/icon/source.svg" />
+                sources
+            </a>
+        </li>
+        <li id="nav-documentation" class="menu-item--primary">
+            <a href="http://docs.atoum.org/">
+                <img src="/assets/images/icon/documentation.svg" />
+                documentation
+            </a>
+        </li>
+        <li id="nav-posts" class="menu-item--primary">
+            <a href="http://atoum.org/news.html">
+                <img src="/assets/images/icon/news.svg" />
+                news
+            </a>
+        </li>
+        <li id="nav-telemetry" class="menu-item--primary">
+            <a href="https://dashboard.telemetry.atoum.org" target="telemetry">
+                <img src="/assets/images/icon/telemetry.svg" />
+                telemetry
+            </a>
+        </li>
+        <li id="nav-extensions" class="menu-item--primary menu-item--current">
+            <a href="http://extensions.atoum.org">
+                <img src="/assets/images/icon/puzzle.svg" />
+                extensions
+            </a>
+        </li>
+        <li>
+    <span>Official extensionsa</span>
+    <ul>
+                    <li><a  href="/extensions/autoloop">autoloop</a></li>
+                    <li><a  href="/extensions/bdd">bdd</a></li>
+                    <li><a  href="/extensions/blackfire">blackfire</a></li>
+                    <li><a  href="/extensions/config">config</a></li>
+                    <li><a  href="/extensions/deprecated">deprecated</a></li>
+                    <li><a  href="/extensions/json-schema">json-schema</a></li>
+                    <li><a class="active" href="/extensions/phpunit">phpunit</a></li>
+                    <li><a  href="/extensions/prophecy">prophecy</a></li>
+                    <li><a  href="/extensions/reports">reports</a></li>
+                    <li><a  href="/extensions/ruler">ruler</a></li>
+                    <li><a  href="/extensions/telemetry">telemetry</a></li>
+                    <li><a  href="/extensions/visibility">visibility</a></li>
+            </ul>
+    <span>Community extensions</span>
+    <ul>
+                    <li><a  href="/extensions/atoum-ide-helper">atoum-ide-helper</a></li>
+                    <li><a  href="/extensions/atoum-teamcity">atoum-teamcity</a></li>
+                    <li><a  href="/extensions/praspel">praspel</a></li>
+                    <li><a  href="/extensions/symfony-di">symfony-di</a></li>
+                    <li><a  href="/extensions/vw">vw</a></li>
+                    <li><a  href="/extensions/xml">xml</a></li>
+            </ul>
+</li>
+
+    </ul>
+</div>
+
+<div aria-controls="sidebar" onclick="toggleMenu(this)" class="atoum-menu--icon-container">
+    <svg viewBox="0 0 100 100" class="atoum-menu--icon">
+        <title>Open menu icon</title>
+        <desc>N-ARY CIRCLED PLUS OPERATOR</desc>
+
+        <circle cx="50" cy="50" r="40" />
+        <line x1="20" y1="50" x2="80" y2="50" transform="rotate(90 50 50)" />
+        <line x1="20" y1="50" x2="80" y2="50" />
+    </svg>
+</div>
+
+
+
+
+        <div class="main">
+            <div class="extension-content">
+                
+    <h1><a href="https://github.com/atoum/phpunit-extension" class="github-link"><img src="/assets/github-icon.svg" /></a> atoum/phpunit-extension <a href="https://travis-ci.org/atoum/phpunit-extension"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Build Status" data-src="https://travis-ci.org/atoum/phpunit-extension.svg?branch=master" onload="lzld(this)" /></a></h1>
+<p>This atoum extensions allows to run your existing PHPUnit test suites
+with atoum's engine! If you want to migrate from PHPUnit to atoum,
+this extension is your best companion!</p>
+<h2>Goals</h2>
+<p>Your project already has PHPUnit test suites. You felt in love with
+atoum. You want to replace PHPUnit by atoum on your project. This
+extension will allow you to run your PHPUnit test suites with atoum,
+ensuring a smooth migration.</p>
+<h2>Install it</h2>
+<p>The extension is still a work in progress. You need to require a
+developpement branch of atoum.</p>
+<p>Note: We need your help to complete the extension, so feel free to
+test the extension and submit issues when you found one.</p>
+<p>Install extension using <a href="https://getcomposer.org">Composer</a>:</p>
+<pre><code class="language-json">{
+    "require-dev": {
+        "atoum/atoum": "dev-virtual-hooks",
+        "atoum/phpunit-extension": "~0.6"
+    }
+}</code></pre>
+<p>Enable the extension using atoum configuration file:</p>
+<pre><code class="language-php">&lt;?php
+
+// .atoum.php
+
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+
+use mageekguy\atoum\phpunit;
+
+$extension = new phpunit\extension($script);
+$extension-&gt;addToRunner($runner);</code></pre>
+<h2>Use it</h2>
+<p>By default, everything should work, simply run <code>atoum</code> as usual and
+your test suites will execute.</p>
+<p>If you want to switch a test suite from PHPUnit to atoum, and get all
+the features from atoum, replace the parent class of your test suites
+from <code>PHPUnit\Framework\TestCase</code> to <code>mageekguy\atoum\phpunit</code>:</p>
+<pre><code class="language-diff">-class EnumTest extends \PHPUnit\Framework\TestCase
++class EnumTest extends \mageekguy\atoum\phpunit</code></pre>
+<p>Enjoy!</p>
+<h2>Support</h2>
+<h3>Helpers</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: center;">Supported</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>fail</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>markTestIncomplete</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>markTestSkipped</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><em>Total</em></td>
+<td style="text-align: center;">33%</td>
+</tr>
+</tbody>
+</table>
+<h3>Assertions</h3>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th style="text-align: center;">Supported</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>assertArrayHasKey(mixed $key, array $array[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertArrayNotHasKey</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertClassHasAttribute</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertClassNotHasAttribute</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertArraySubset(array $subset, array $array[, bool $strict = '', string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertClassHasStaticAttribute</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertClassNotHasStaticAttribute</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertContains(mixed $needle, iterable $haystack[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertContains(string $needle, string $haystack[, string $message = '', boolean $ignoreCase = FALSE])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertNotContains</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertContainsOnly(string $type, iterable $haystack[, boolean $isNativeType = NULL, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertContainsOnlyInstancesOf(string $classname, iterable $haystack[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertNotContainsOnly</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertCount($expectedCount, $haystack[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertNotCount($expectedCount, $haystack[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertEmpty(mixed $actual[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertNotEmpty(mixed $actual[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertEqualXMLStructure</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertEquals(mixed $expected, mixed $actual[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertEquals(float $expected, float $actual[, string $message = '', float $delta = 0])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertEquals(DOMDocument $expected, DOMDocument $actual[, string $message = ''])</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertEquals(object $expected, object $actual[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertEquals(array $expected, array $actual[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertNotEquals</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertFalse(bool $condition[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertNotFalse</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertFileEquals</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertFileNotEquals</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertFileExists</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertFileNotExists</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertGreaterThan(mixed $expected, mixed $actual[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertGreaterThanOrEqual(mixed $expected, mixed $actual[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertInfinite(mixed $variable[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertFinite(mixed $variable[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertInstanceOf($expected, $actual[, $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertNotInstanceOf($expected, $actual[, $message = ''])</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertInternalType($expected, $actual[, $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertNotInternalType</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertJsonFileEqualsJsonFile</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertJsonStringEqualsJsonFile</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertJsonStringEqualsJsonString</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertLessThan</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertLessThanOrEqual</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertNan(mixed $variable[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertNull(mixed $variable[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertNotNull(mixed $variable[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertObjectHasAttribute(string $attribute[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertObjectNotHasAttribute(string $attribute[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertRegExp</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertNotRegExp</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertStringMatchesFormat</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertStringNotMatchesFormat</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertStringMatchesFormatFile</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertStringNotMatchesFormatFile</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertSame(mixed $expected, mixed $actual[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertNotSame(mixed $expected, mixed $actual[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertStringEndsWith</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertStringEndsNotWith</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertStringEqualsFile</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertStringNotEqualsFile</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertStringStartsWith</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertStringStartsNotWith</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertThat(mixed $value, PHPUnit_Framework_Constraint $constraint[, $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertTrue(bool $condition[, string $message = ''])</code></td>
+<td style="text-align: center;">✅</td>
+</tr>
+<tr>
+<td><code>assertNotTrue</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertXmlFileEqualsXmlFile</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertXmlFileNotEqualsXmlFile</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertXmlStringEqualsXmlFile</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertXmlStringNotEqualsXmlFile</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertXmlStringEqualsXmlString</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><code>assertXmlStringNotEqualsXmlString</code></td>
+<td style="text-align: center;">❌</td>
+</tr>
+<tr>
+<td><em>Total</em></td>
+<td style="text-align: center;">42.25%</td>
+</tr>
+</tbody>
+</table>
+<h3>Classes</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th style="text-align: center;">Supported</th>
+<th>Mapped to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PHPUnit\Framework\TestCase</code></td>
+<td style="text-align: center;">✅</td>
+<td><code>mageekguy\atoum\phpunit\test</code></td>
+</tr>
+<tr>
+<td><code>PHPUnit\Framework\Constraint</code></td>
+<td style="text-align: center;">✅</td>
+<td><code>mageekguy\atoum\phpunit\constraint</code></td>
+</tr>
+<tr>
+<td><em>Total</em></td>
+<td style="text-align: center;">100%</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Exceptions</h3>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th style="text-align: center;">Supported</th>
+<th>Mapped to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>PHPUnit\Framework\AssertionFailedError</code></td>
+<td style="text-align: center;">✅</td>
+<td><code>mageekguy\atoum\asserter\exception</code></td>
+</tr>
+<tr>
+<td><code>PHPUnit\Framework\Exception</code></td>
+<td style="text-align: center;">✅</td>
+<td><code>mageekguy\atoum\exceptions\runtime</code></td>
+</tr>
+<tr>
+<td><code>PHPUnit\Framework\ExpectationFailedException</code></td>
+<td style="text-align: center;">✅</td>
+<td><code>mageekguy\atoum\phpunit\constraint\exception</code></td>
+</tr>
+<tr>
+<td><em>Total</em></td>
+<td style="text-align: center;">100%</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3>Annotations</h3>
+<table>
+<thead>
+<tr>
+<th>Annotation</th>
+<th style="text-align: center;">Supported</th>
+<th style="text-align: center;">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>@author</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@after</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@afterClass</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@backupGlobals</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@backupStaticAttributes</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@before</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@beforeClass</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@codeCoverageIgnore*</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@covers</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">Does only consider the class name.</td>
+</tr>
+<tr>
+<td><code>@coversDefaultClass</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@coversNothing</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@dataProvider</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@depends</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@expectedException</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@expectedExceptionCode</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@expectedExceptionMessage</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@expectedExceptionMessageRegExp</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@group</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@large</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">Does not support strict-mode failures</td>
+</tr>
+<tr>
+<td><code>@medium</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">Does not support strict-mode failures</td>
+</tr>
+<tr>
+<td><code>@preserveGlobalState</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@requires</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@runTestsInSeparateProcesses</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">Does not preserve global state in child processes</td>
+</tr>
+<tr>
+<td><code>@runInSeparateProcess</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">Does not preserve global state in child processes</td>
+</tr>
+<tr>
+<td><code>@small</code></td>
+<td style="text-align: center;">✅</td>
+<td style="text-align: center;">Does not support strict-mode failures</td>
+</tr>
+<tr>
+<td><code>@test</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@testdox</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@ticket</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><code>@uses</code></td>
+<td style="text-align: center;">❌</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td><em>Total</em></td>
+<td style="text-align: center;">37.93%</td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+<h2>Links</h2>
+<ul>
+<li><a href="http://atoum.org">atoum</a></li>
+<li><a href="http://docs.atoum.org">atoum's documentation</a></li>
+<li><a href="https://phpunit.de/">PHPUnit</a></li>
+</ul>
+<h2>License</h2>
+<p>phpunit-extension is released under the BSD-3-Clause License. See the bundled LICENSE file for details.</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="atoum" data-src="http://atoum.org/images/logo/atoum.png" onload="lzld(this)" /></p>
+
+            </div>
+        </div>
+
+        <script src="/assets/js/main.bfce05ce.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+        <script type="text/javascript">
+    docsearch({
+        apiKey: '0f252c26c36d6ef21fb74be147e94b14',
+        indexName: 'atoum',
+        inputSelector: '#algolia-search',
+        algoliaOptions: { 'facetFilters': [["language:en", 'tags:extensions']] },
+        debug: false
+    });
+</script>
+
+    </body>
+</html>

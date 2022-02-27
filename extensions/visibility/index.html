@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="/assets/js/critical.951e71c3.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>atoum&#039;s extensions</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+        <link rel="stylesheet" href="/assets/css/main.6ae188f7.css" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+            <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-72192129-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    </head>
+    <body class="search-column">
+        <nav id="menu" class="atoum-menu--container atoum-menu--container__primary atoum-menu-desktop--primary">
+    <ul>
+        <li>
+            <a href="http://atoum.org/" id="nav-about">
+                <img src="/assets/images/icon/about.svg" />
+                about
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/features.html" id="nav-features">
+                <img src="/assets/images/icon/features.svg" />
+                features
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/sources.html" id="nav-source">
+                <img src="/assets/images/icon/source.svg" />
+                sources
+            </a>
+        </li>
+        <li>
+            <a href="http://docs.atoum.org/" id="nav-documentation">
+                <img src="/assets/images/icon/documentation.svg" />
+                documentation
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/news.html" id="nav-posts">
+                <img src="/assets/images/icon/news.svg" />
+                news
+            </a>
+        </li>
+        <li>
+            <a href="http://extensions.atoum.org" id="nav-extensions">
+                <img src="/assets/images/icon/puzzle.svg" />
+                extensions
+            </a>
+        </li>
+        <li>
+            <a href="https://dashboard.telemetry.atoum.org" id="nav-telemetry" target="telemetry">
+                <img src="/assets/images/icon/telemetry.svg" />
+                telemetry
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+
+<div class="atoum-menu-desktop--secondary extension-list">
+
+    <div class="secondary-menu-header">
+        <a class="secondary-menu-header--logo-link" href="/">
+            <img src="/assets/images/atoum.png"  width="61px" height="50px" class="secondary-menu-header--logo" />
+        </a>
+
+        <div class="secondary-menu-header--empty-translation-list"></div>
+
+        <input type="text" placeholder="Search" id="algolia-search" class="secondary-menu-header--search" onFocus="toggleSearch(true)" onBlur="toggleSearch(false)" />
+    </div>
+
+    <ul style="padding: 10px 0 0 0">
+        <li>
+    <span>Official extensionsa</span>
+    <ul>
+                    <li><a  href="/extensions/autoloop">autoloop</a></li>
+                    <li><a  href="/extensions/bdd">bdd</a></li>
+                    <li><a  href="/extensions/blackfire">blackfire</a></li>
+                    <li><a  href="/extensions/config">config</a></li>
+                    <li><a  href="/extensions/deprecated">deprecated</a></li>
+                    <li><a  href="/extensions/json-schema">json-schema</a></li>
+                    <li><a  href="/extensions/phpunit">phpunit</a></li>
+                    <li><a  href="/extensions/prophecy">prophecy</a></li>
+                    <li><a  href="/extensions/reports">reports</a></li>
+                    <li><a  href="/extensions/ruler">ruler</a></li>
+                    <li><a  href="/extensions/telemetry">telemetry</a></li>
+                    <li><a class="active" href="/extensions/visibility">visibility</a></li>
+            </ul>
+    <span>Community extensions</span>
+    <ul>
+                    <li><a  href="/extensions/atoum-ide-helper">atoum-ide-helper</a></li>
+                    <li><a  href="/extensions/atoum-teamcity">atoum-teamcity</a></li>
+                    <li><a  href="/extensions/praspel">praspel</a></li>
+                    <li><a  href="/extensions/symfony-di">symfony-di</a></li>
+                    <li><a  href="/extensions/vw">vw</a></li>
+                    <li><a  href="/extensions/xml">xml</a></li>
+            </ul>
+</li>
+
+    </ul>
+</div>
+
+<div class="atoum-menu--container atoum-menu--container__primary sidebar extension-list atoum-mobile-menu" id="sidebar">
+    <ul>
+        <li class="menu-item--brand">
+            <img src="http://atoum.org/images/logo/atoum.png"> atoum
+        </li>
+        <li id="nav-about" class="menu-item--primary" >
+            <a href="http://atoum.org/">
+                <img src="/assets/images/icon/about.svg"/>
+                about
+            </a>
+        </li>
+        <li id="nav-features" class="menu-item--primary">
+            <a href="http://atoum.org/features.html">
+                <img src="/assets/images/icon/features.svg" />
+                features
+            </a>
+        </li>
+        <li id="nav-source" class="menu-item--primary">
+            <a href="http://atoum.org/sources.html">
+                <img src="/assets/images/icon/source.svg" />
+                sources
+            </a>
+        </li>
+        <li id="nav-documentation" class="menu-item--primary">
+            <a href="http://docs.atoum.org/">
+                <img src="/assets/images/icon/documentation.svg" />
+                documentation
+            </a>
+        </li>
+        <li id="nav-posts" class="menu-item--primary">
+            <a href="http://atoum.org/news.html">
+                <img src="/assets/images/icon/news.svg" />
+                news
+            </a>
+        </li>
+        <li id="nav-telemetry" class="menu-item--primary">
+            <a href="https://dashboard.telemetry.atoum.org" target="telemetry">
+                <img src="/assets/images/icon/telemetry.svg" />
+                telemetry
+            </a>
+        </li>
+        <li id="nav-extensions" class="menu-item--primary menu-item--current">
+            <a href="http://extensions.atoum.org">
+                <img src="/assets/images/icon/puzzle.svg" />
+                extensions
+            </a>
+        </li>
+        <li>
+    <span>Official extensionsa</span>
+    <ul>
+                    <li><a  href="/extensions/autoloop">autoloop</a></li>
+                    <li><a  href="/extensions/bdd">bdd</a></li>
+                    <li><a  href="/extensions/blackfire">blackfire</a></li>
+                    <li><a  href="/extensions/config">config</a></li>
+                    <li><a  href="/extensions/deprecated">deprecated</a></li>
+                    <li><a  href="/extensions/json-schema">json-schema</a></li>
+                    <li><a  href="/extensions/phpunit">phpunit</a></li>
+                    <li><a  href="/extensions/prophecy">prophecy</a></li>
+                    <li><a  href="/extensions/reports">reports</a></li>
+                    <li><a  href="/extensions/ruler">ruler</a></li>
+                    <li><a  href="/extensions/telemetry">telemetry</a></li>
+                    <li><a class="active" href="/extensions/visibility">visibility</a></li>
+            </ul>
+    <span>Community extensions</span>
+    <ul>
+                    <li><a  href="/extensions/atoum-ide-helper">atoum-ide-helper</a></li>
+                    <li><a  href="/extensions/atoum-teamcity">atoum-teamcity</a></li>
+                    <li><a  href="/extensions/praspel">praspel</a></li>
+                    <li><a  href="/extensions/symfony-di">symfony-di</a></li>
+                    <li><a  href="/extensions/vw">vw</a></li>
+                    <li><a  href="/extensions/xml">xml</a></li>
+            </ul>
+</li>
+
+    </ul>
+</div>
+
+<div aria-controls="sidebar" onclick="toggleMenu(this)" class="atoum-menu--icon-container">
+    <svg viewBox="0 0 100 100" class="atoum-menu--icon">
+        <title>Open menu icon</title>
+        <desc>N-ARY CIRCLED PLUS OPERATOR</desc>
+
+        <circle cx="50" cy="50" r="40" />
+        <line x1="20" y1="50" x2="80" y2="50" transform="rotate(90 50 50)" />
+        <line x1="20" y1="50" x2="80" y2="50" />
+    </svg>
+</div>
+
+
+
+
+        <div class="main">
+            <div class="extension-content">
+                
+    <h1><a href="https://github.com/atoum/visibility-extension" class="github-link"><img src="/assets/github-icon.svg" /></a> atoum/visibility-extension <a href="https://github.com/atoum/visibility-extension/actions"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="example workflow name" data-src="https://github.com/atoum/visibility-extension/workflows/Linux/badge.svg" onload="lzld(this)" /></a></h1>
+<p>The atoum visibility-extension allows you to override method visibility in your unit tests. For example, you will be able to test protected method with it.</p>
+<h2>Example</h2>
+<p>In the example, we test the protected method <code>bar</code>:</p>
+<pre><code class="language-php">&lt;?php
+
+namespace
+{
+  class foo
+  {
+    protected function bar()
+    {
+      return 'foo';
+    }
+  }
+}
+
+namespace tests\units
+{
+  use atoum\atoum;
+
+  class foo extends atoum\test
+  {
+    public function testBar()
+    {
+      $this
+        -&gt;if($sut = new \foo())
+        -&gt;then
+          -&gt;string($this-&gt;invoke($sut)-&gt;bar())-&gt;isEqualTo('foo')
+      ;
+    }
+  }
+}</code></pre>
+<h2>Install it</h2>
+<p>Install extension using <a href="https://getcomposer.org">composer</a>:</p>
+<pre><code>composer require --dev atoum/visibility-extension</code></pre>
+<p>The extension will be automatically loaded. If you ever want to unload it, you can add this to your configuration file:</p>
+<pre><code class="language-php">&lt;?php
+
+// .atoum.php
+
+use atoum\atoum\visibility;
+
+$runner-&gt;removeExtension(visibility\extension::class);</code></pre>
+<h2>Use it</h2>
+<p>You can achieve visibility override using two methods:</p>
+<ul>
+<li>Override concrete classes' methods visibility: this will allow you to assert on protected methods returned values,</li>
+<li>Override mocked classes' methods visibility: this will allow you to override protected methods code and assert on their calls.</li>
+</ul>
+<h3>Override concrete classes' methods visibility</h3>
+<p>Overriding methods visibility is done on-the-fly in unit tests body using the <code>invoke</code> method:</p>
+<pre><code class="language-php">&lt;?php
+
+namespace
+{
+    class foo
+    {
+        protected function bar()
+        {
+            return $this;
+        }
+
+        protected function baz($arg)
+        {
+            return $arg;
+        }
+    }
+}
+
+namespace tests\units
+{
+    use atoum\atoum;
+
+    class foo extends atoum\test
+    {
+        public function testBar()
+        {
+            $this
+                -&gt;if($sut = new \foo())
+                -&gt;then
+                    -&gt;object($this-&gt;invoke($sut)-&gt;bar())-&gt;isIdenticalTo($sut)
+            ;
+        }
+
+        public function testBaz()
+        {
+            $this
+                -&gt;if($sut = new \foo())
+                -&gt;and($arg = uniqid())
+                -&gt;then
+                    -&gt;variable($this-&gt;invoke($sut)-&gt;baz($arg))-&gt;isEqualTo($arg)
+            ;
+        }
+    }
+}</code></pre>
+<p>As you can see, we only used the <code>invoke</code> method. It has a special syntax that we are going to detail: <code>$this-&gt;invoke(&lt;object instance&gt;)-&gt;&lt;method name&gt;(&lt;arguments&gt;)</code></p>
+<ul>
+<li><code>&lt;object instance&gt;</code> is a reference to an object instance. In the previous example it was <code>$foo</code>, a reference to a <code>\foo</code> instance;</li>
+<li><code>&lt;method name&gt;</code> is the name of the method we want to make visible and call. In the previous example it was <code>bar</code>or <code>baz</code>.;</li>
+<li><code>&lt;arguments&gt;</code> is the arguments list you want to pass to the method. In the previous example it was <code>$arg</code>, a string generated with <code>uniqid()</code>.</li>
+</ul>
+<h3>Override mocked classes' methods visibility</h3>
+<p>Overriding mocked classes' methods requires a bit more work, involving the mock generator. Before detailing how to achieve that,
+<strong>keep in mind that there are some limitations you have to be aware of</strong>. We'll detail the just after a short example:</p>
+<pre><code class="language-php">&lt;?php
+
+namespace
+{
+    class foo
+    {
+        public function baz()
+        {
+            return $this-&gt;bar();
+        }
+
+        protected function bar()
+        {
+            $args = func_get_args();
+
+            return sizeof($args) ? $args : $this;
+        }
+    }
+}
+
+namespace tests\units
+{
+    use atoum\atoum;
+
+    class foo extends atoum\test
+    {
+        public function testBar()
+        {
+            $this
+                -&gt;given(
+                    $this-&gt;mockGenerator
+                        -&gt;makeVisible('bar')
+                        -&gt;generate('foo')
+                )
+                -&gt;if($mockedSut = new \mock\foo)
+                -&gt;and($this-&gt;calling($mockedSut)-&gt;bar = 'foo')
+                -&gt;then
+                    -&gt;string($mockedSut-&gt;baz())-&gt;isEqualTo('foo')
+                    -&gt;string($mockedSut-&gt;baz())-&gt;isEqualTo('foo')
+                    -&gt;mock($mockedSut)
+                        -&gt;call('bar')-&gt;twice()
+            ;
+        }
+    }
+}</code></pre>
+<p>The mock generator now provides a <code>makeVisible</code> method which you can call to override a method visibility. You have to call
+this method <strong>before</strong> the generation of the mocked class which happens the first time a mock is instanciated or when you call
+the <code>generate</code> method of the mock controller.</p>
+<p>Doing this will create a child class (the mock) and define the protected methods as public. You will then be able to call
+them directly, without even using the <code>invoke</code> method we saw in the previous section.</p>
+<p>You will also be able to assert on those methods' calls using standard atoum assertions.</p>
+<p>Now let's talk about the limitations:</p>
+<ul>
+<li>The first one is that the visibility override has to be declared <strong>before the first generation of the mocked class</strong>,</li>
+<li>Once the visibility has been overridden, <strong>it can't be reverted</strong>,</li>
+<li>Overriding the visibility of method in mocks has to be done carefully: <strong>it is a permanent operation involving reflection</strong>.</li>
+</ul>
+<p>When you want to temporarily override the visibility of a mock class method, you can change the name of the mocked class using the <code>generate</code> method's
+arguments. Using the previous example, it would look like:</p>
+<pre><code class="language-php">&lt;?php
+
+namespace tests\units
+{
+    use atoum\atoum;
+
+    class foo extends atoum\test
+    {
+        public function testBar()
+        {
+            $this
+                -&gt;given(
+                    $this-&gt;mockGenerator
+                        -&gt;makeVisible('bar')
+                        -&gt;generate('foo', 'mock', 'mockedFoo')
+                )
+                -&gt;if($mockedSut = new \mock\mockedFoo)
+                -&gt;and($this-&gt;calling($mockedSut)-&gt;bar = 'foo')
+                -&gt;then
+                    -&gt;string($mockedSut-&gt;baz())-&gt;isEqualTo('foo')
+                    -&gt;string($mockedSut-&gt;baz())-&gt;isEqualTo('foo')
+                    -&gt;mock($mockedSut)
+                        -&gt;call('bar')-&gt;twice()
+            ;
+        }
+    }
+}</code></pre>
+<p>Doing this, we would generate a <code>\mock\mockedFoo</code> class from the <code>\foo</code> class with a looser visiblity on the <code>bar</code> method.
+This will allow us to bypass some limitation:</p>
+<ul>
+<li>This will generate a new mock class so the visibility override will always apply, even if the <code>\foo</code> class was already mocked,</li>
+<li>We can &quot;revert&quot; this operation by treating this mock class as a one-shot mock and forget it right after the test. This will still
+require that we don't reuse the same name for future mocks.</li>
+</ul>
+<h2>Links</h2>
+<ul>
+<li><a href="http://atoum.org">atoum</a></li>
+<li><a href="http://docs.atoum.org">atoum's documentation</a></li>
+</ul>
+<h2>License</h2>
+<p>visibility-extension is released under the BSD-3 Clause License. See the bundled LICENSE file for details.</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="atoum" data-src="http://atoum.org/images/logo/atoum.png" onload="lzld(this)" /></p>
+
+            </div>
+        </div>
+
+        <script src="/assets/js/main.bfce05ce.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+        <script type="text/javascript">
+    docsearch({
+        apiKey: '0f252c26c36d6ef21fb74be147e94b14',
+        indexName: 'atoum',
+        inputSelector: '#algolia-search',
+        algoliaOptions: { 'facetFilters': [["language:en", 'tags:extensions']] },
+        debug: false
+    });
+</script>
+
+    </body>
+</html>

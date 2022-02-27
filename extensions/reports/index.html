@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="/assets/js/critical.951e71c3.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>atoum&#039;s extensions</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+        <link rel="stylesheet" href="/assets/css/main.6ae188f7.css" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+            <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-72192129-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    </head>
+    <body class="search-column">
+        <nav id="menu" class="atoum-menu--container atoum-menu--container__primary atoum-menu-desktop--primary">
+    <ul>
+        <li>
+            <a href="http://atoum.org/" id="nav-about">
+                <img src="/assets/images/icon/about.svg" />
+                about
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/features.html" id="nav-features">
+                <img src="/assets/images/icon/features.svg" />
+                features
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/sources.html" id="nav-source">
+                <img src="/assets/images/icon/source.svg" />
+                sources
+            </a>
+        </li>
+        <li>
+            <a href="http://docs.atoum.org/" id="nav-documentation">
+                <img src="/assets/images/icon/documentation.svg" />
+                documentation
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/news.html" id="nav-posts">
+                <img src="/assets/images/icon/news.svg" />
+                news
+            </a>
+        </li>
+        <li>
+            <a href="http://extensions.atoum.org" id="nav-extensions">
+                <img src="/assets/images/icon/puzzle.svg" />
+                extensions
+            </a>
+        </li>
+        <li>
+            <a href="https://dashboard.telemetry.atoum.org" id="nav-telemetry" target="telemetry">
+                <img src="/assets/images/icon/telemetry.svg" />
+                telemetry
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+
+<div class="atoum-menu-desktop--secondary extension-list">
+
+    <div class="secondary-menu-header">
+        <a class="secondary-menu-header--logo-link" href="/">
+            <img src="/assets/images/atoum.png"  width="61px" height="50px" class="secondary-menu-header--logo" />
+        </a>
+
+        <div class="secondary-menu-header--empty-translation-list"></div>
+
+        <input type="text" placeholder="Search" id="algolia-search" class="secondary-menu-header--search" onFocus="toggleSearch(true)" onBlur="toggleSearch(false)" />
+    </div>
+
+    <ul style="padding: 10px 0 0 0">
+        <li>
+    <span>Official extensionsa</span>
+    <ul>
+                    <li><a  href="/extensions/autoloop">autoloop</a></li>
+                    <li><a  href="/extensions/bdd">bdd</a></li>
+                    <li><a  href="/extensions/blackfire">blackfire</a></li>
+                    <li><a  href="/extensions/config">config</a></li>
+                    <li><a  href="/extensions/deprecated">deprecated</a></li>
+                    <li><a  href="/extensions/json-schema">json-schema</a></li>
+                    <li><a  href="/extensions/phpunit">phpunit</a></li>
+                    <li><a  href="/extensions/prophecy">prophecy</a></li>
+                    <li><a class="active" href="/extensions/reports">reports</a></li>
+                    <li><a  href="/extensions/ruler">ruler</a></li>
+                    <li><a  href="/extensions/telemetry">telemetry</a></li>
+                    <li><a  href="/extensions/visibility">visibility</a></li>
+            </ul>
+    <span>Community extensions</span>
+    <ul>
+                    <li><a  href="/extensions/atoum-ide-helper">atoum-ide-helper</a></li>
+                    <li><a  href="/extensions/atoum-teamcity">atoum-teamcity</a></li>
+                    <li><a  href="/extensions/praspel">praspel</a></li>
+                    <li><a  href="/extensions/symfony-di">symfony-di</a></li>
+                    <li><a  href="/extensions/vw">vw</a></li>
+                    <li><a  href="/extensions/xml">xml</a></li>
+            </ul>
+</li>
+
+    </ul>
+</div>
+
+<div class="atoum-menu--container atoum-menu--container__primary sidebar extension-list atoum-mobile-menu" id="sidebar">
+    <ul>
+        <li class="menu-item--brand">
+            <img src="http://atoum.org/images/logo/atoum.png"> atoum
+        </li>
+        <li id="nav-about" class="menu-item--primary" >
+            <a href="http://atoum.org/">
+                <img src="/assets/images/icon/about.svg"/>
+                about
+            </a>
+        </li>
+        <li id="nav-features" class="menu-item--primary">
+            <a href="http://atoum.org/features.html">
+                <img src="/assets/images/icon/features.svg" />
+                features
+            </a>
+        </li>
+        <li id="nav-source" class="menu-item--primary">
+            <a href="http://atoum.org/sources.html">
+                <img src="/assets/images/icon/source.svg" />
+                sources
+            </a>
+        </li>
+        <li id="nav-documentation" class="menu-item--primary">
+            <a href="http://docs.atoum.org/">
+                <img src="/assets/images/icon/documentation.svg" />
+                documentation
+            </a>
+        </li>
+        <li id="nav-posts" class="menu-item--primary">
+            <a href="http://atoum.org/news.html">
+                <img src="/assets/images/icon/news.svg" />
+                news
+            </a>
+        </li>
+        <li id="nav-telemetry" class="menu-item--primary">
+            <a href="https://dashboard.telemetry.atoum.org" target="telemetry">
+                <img src="/assets/images/icon/telemetry.svg" />
+                telemetry
+            </a>
+        </li>
+        <li id="nav-extensions" class="menu-item--primary menu-item--current">
+            <a href="http://extensions.atoum.org">
+                <img src="/assets/images/icon/puzzle.svg" />
+                extensions
+            </a>
+        </li>
+        <li>
+    <span>Official extensionsa</span>
+    <ul>
+                    <li><a  href="/extensions/autoloop">autoloop</a></li>
+                    <li><a  href="/extensions/bdd">bdd</a></li>
+                    <li><a  href="/extensions/blackfire">blackfire</a></li>
+                    <li><a  href="/extensions/config">config</a></li>
+                    <li><a  href="/extensions/deprecated">deprecated</a></li>
+                    <li><a  href="/extensions/json-schema">json-schema</a></li>
+                    <li><a  href="/extensions/phpunit">phpunit</a></li>
+                    <li><a  href="/extensions/prophecy">prophecy</a></li>
+                    <li><a class="active" href="/extensions/reports">reports</a></li>
+                    <li><a  href="/extensions/ruler">ruler</a></li>
+                    <li><a  href="/extensions/telemetry">telemetry</a></li>
+                    <li><a  href="/extensions/visibility">visibility</a></li>
+            </ul>
+    <span>Community extensions</span>
+    <ul>
+                    <li><a  href="/extensions/atoum-ide-helper">atoum-ide-helper</a></li>
+                    <li><a  href="/extensions/atoum-teamcity">atoum-teamcity</a></li>
+                    <li><a  href="/extensions/praspel">praspel</a></li>
+                    <li><a  href="/extensions/symfony-di">symfony-di</a></li>
+                    <li><a  href="/extensions/vw">vw</a></li>
+                    <li><a  href="/extensions/xml">xml</a></li>
+            </ul>
+</li>
+
+    </ul>
+</div>
+
+<div aria-controls="sidebar" onclick="toggleMenu(this)" class="atoum-menu--icon-container">
+    <svg viewBox="0 0 100 100" class="atoum-menu--icon">
+        <title>Open menu icon</title>
+        <desc>N-ARY CIRCLED PLUS OPERATOR</desc>
+
+        <circle cx="50" cy="50" r="40" />
+        <line x1="20" y1="50" x2="80" y2="50" transform="rotate(90 50 50)" />
+        <line x1="20" y1="50" x2="80" y2="50" />
+    </svg>
+</div>
+
+
+
+
+        <div class="main">
+            <div class="extension-content">
+                
+    <h1><a href="https://github.com/atoum/reports-extension" class="github-link"><img src="/assets/github-icon.svg" /></a> atoum/reports-extension <a href="https://travis-ci.org/atoum/reports-extension"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Build Status" data-src="https://travis-ci.org/atoum/reports-extension.svg?branch=master" onload="lzld(this)" /></a> <a href="https://styleci.io/repos/35064717"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="StyleCI" data-src="https://styleci.io/repos/35064717/shield?branch=master" onload="lzld(this)" /></a></h1>
+<h2>Install it</h2>
+<p>Install extension using <a href="https://getcomposer.org">composer</a>:</p>
+<pre><code>composer require --dev atoum/reports-extension</code></pre>
+<p>Enable the extension using atoum configuration file:</p>
+<pre><code class="language-php">&lt;?php
+
+// .atoum.php
+
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+
+use atoum\atoum\reports;
+
+$extension = new reports\extension($script);
+
+$extension-&gt;addToRunner($runner);</code></pre>
+<h2>Use it</h2>
+<h3>HTML coverage report</h3>
+<p><strong>Check out the demo report generated with atoum's test suite: <a href="http://atoum.github.io/reports-extension/">http://atoum.github.io/reports-extension/</a></strong></p>
+<p>Add the following code to your configuration file:</p>
+<pre><code class="language-php">&lt;?php
+
+// .atoum.php
+
+use atoum\atoum\reports;
+use atoum\atoum\reports\coverage;
+use atoum\atoum\writers\std;
+
+$script-&gt;addDefaultReport();
+
+$coverage = new coverage\html();
+$coverage-&gt;addWriter(new std\out());
+$coverage-&gt;setOutPutDirectory(__DIR__ . '/coverage');
+$runner-&gt;addReport($coverage);</code></pre>
+<h4>Branches and path coverage</h4>
+<p>If you want to generate branches and paths reports, you will have to install xDebug 2.3.0 or later:</p>
+<pre><code>wget https://github.com/FriendsOfPHP/pickle/releases/download/v0.4.0/pickle.phar
+php pickle.phar install xdebug
+
+php -v</code></pre>
+<p>Once done, just use the <code>-ebpc</code> command line flag or add the following line of code to your configuration file:</p>
+<pre><code class="language-php">&lt;?php
+
+// .atoum.php
+
+$script-&gt;enableBranchAndPathCoverage();</code></pre>
+<h3>Sonar coverage report</h3>
+<p>To add generic code coverage for sonar.</p>
+<pre><code class="language-php">$xunit = new \atoum\atoum\reports\sonar\xunit();
+$writer = new \atoum\atoum\writers\file('./sonar-xunit.xml');
+$xunit-&gt;addWriter($writer);
+$runner-&gt;addReport($xunit);
+
+$clover = new \atoum\atoum\reports\sonar\clover();
+$writer = new \atoum\atoum\writers\file('./sonar-clover.xml');
+$clover-&gt;addWriter($writer);
+$runner-&gt;addReport($clover);</code></pre>
+<p>and add report generate to <code>sonar.genericcoverage</code> properties</p>
+<h2>License</h2>
+<p>reports-extension is released under the BSD-3-Clause License. See the bundled <a href="LICENSE">LICENSE</a> file for details.</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="atoum" data-src="http://atoum.org/images/logo/atoum.png" onload="lzld(this)" /></p>
+
+            </div>
+        </div>
+
+        <script src="/assets/js/main.bfce05ce.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+        <script type="text/javascript">
+    docsearch({
+        apiKey: '0f252c26c36d6ef21fb74be147e94b14',
+        indexName: 'atoum',
+        inputSelector: '#algolia-search',
+        algoliaOptions: { 'facetFilters': [["language:en", 'tags:extensions']] },
+        debug: false
+    });
+</script>
+
+    </body>
+</html>

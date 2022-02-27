@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="/assets/js/critical.951e71c3.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>atoum&#039;s extensions</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+        <link rel="stylesheet" href="/assets/css/main.6ae188f7.css" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+            <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-72192129-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    </head>
+    <body class="search-column">
+        <nav id="menu" class="atoum-menu--container atoum-menu--container__primary atoum-menu-desktop--primary">
+    <ul>
+        <li>
+            <a href="http://atoum.org/" id="nav-about">
+                <img src="/assets/images/icon/about.svg" />
+                about
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/features.html" id="nav-features">
+                <img src="/assets/images/icon/features.svg" />
+                features
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/sources.html" id="nav-source">
+                <img src="/assets/images/icon/source.svg" />
+                sources
+            </a>
+        </li>
+        <li>
+            <a href="http://docs.atoum.org/" id="nav-documentation">
+                <img src="/assets/images/icon/documentation.svg" />
+                documentation
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/news.html" id="nav-posts">
+                <img src="/assets/images/icon/news.svg" />
+                news
+            </a>
+        </li>
+        <li>
+            <a href="http://extensions.atoum.org" id="nav-extensions">
+                <img src="/assets/images/icon/puzzle.svg" />
+                extensions
+            </a>
+        </li>
+        <li>
+            <a href="https://dashboard.telemetry.atoum.org" id="nav-telemetry" target="telemetry">
+                <img src="/assets/images/icon/telemetry.svg" />
+                telemetry
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+
+<div class="atoum-menu-desktop--secondary extension-list">
+
+    <div class="secondary-menu-header">
+        <a class="secondary-menu-header--logo-link" href="/">
+            <img src="/assets/images/atoum.png"  width="61px" height="50px" class="secondary-menu-header--logo" />
+        </a>
+
+        <div class="secondary-menu-header--empty-translation-list"></div>
+
+        <input type="text" placeholder="Search" id="algolia-search" class="secondary-menu-header--search" onFocus="toggleSearch(true)" onBlur="toggleSearch(false)" />
+    </div>
+
+    <ul style="padding: 10px 0 0 0">
+        <li>
+    <span>Official extensionsa</span>
+    <ul>
+                    <li><a  href="/extensions/autoloop">autoloop</a></li>
+                    <li><a  href="/extensions/bdd">bdd</a></li>
+                    <li><a  href="/extensions/blackfire">blackfire</a></li>
+                    <li><a  href="/extensions/config">config</a></li>
+                    <li><a  href="/extensions/deprecated">deprecated</a></li>
+                    <li><a  href="/extensions/json-schema">json-schema</a></li>
+                    <li><a  href="/extensions/phpunit">phpunit</a></li>
+                    <li><a  href="/extensions/prophecy">prophecy</a></li>
+                    <li><a  href="/extensions/reports">reports</a></li>
+                    <li><a class="active" href="/extensions/ruler">ruler</a></li>
+                    <li><a  href="/extensions/telemetry">telemetry</a></li>
+                    <li><a  href="/extensions/visibility">visibility</a></li>
+            </ul>
+    <span>Community extensions</span>
+    <ul>
+                    <li><a  href="/extensions/atoum-ide-helper">atoum-ide-helper</a></li>
+                    <li><a  href="/extensions/atoum-teamcity">atoum-teamcity</a></li>
+                    <li><a  href="/extensions/praspel">praspel</a></li>
+                    <li><a  href="/extensions/symfony-di">symfony-di</a></li>
+                    <li><a  href="/extensions/vw">vw</a></li>
+                    <li><a  href="/extensions/xml">xml</a></li>
+            </ul>
+</li>
+
+    </ul>
+</div>
+
+<div class="atoum-menu--container atoum-menu--container__primary sidebar extension-list atoum-mobile-menu" id="sidebar">
+    <ul>
+        <li class="menu-item--brand">
+            <img src="http://atoum.org/images/logo/atoum.png"> atoum
+        </li>
+        <li id="nav-about" class="menu-item--primary" >
+            <a href="http://atoum.org/">
+                <img src="/assets/images/icon/about.svg"/>
+                about
+            </a>
+        </li>
+        <li id="nav-features" class="menu-item--primary">
+            <a href="http://atoum.org/features.html">
+                <img src="/assets/images/icon/features.svg" />
+                features
+            </a>
+        </li>
+        <li id="nav-source" class="menu-item--primary">
+            <a href="http://atoum.org/sources.html">
+                <img src="/assets/images/icon/source.svg" />
+                sources
+            </a>
+        </li>
+        <li id="nav-documentation" class="menu-item--primary">
+            <a href="http://docs.atoum.org/">
+                <img src="/assets/images/icon/documentation.svg" />
+                documentation
+            </a>
+        </li>
+        <li id="nav-posts" class="menu-item--primary">
+            <a href="http://atoum.org/news.html">
+                <img src="/assets/images/icon/news.svg" />
+                news
+            </a>
+        </li>
+        <li id="nav-telemetry" class="menu-item--primary">
+            <a href="https://dashboard.telemetry.atoum.org" target="telemetry">
+                <img src="/assets/images/icon/telemetry.svg" />
+                telemetry
+            </a>
+        </li>
+        <li id="nav-extensions" class="menu-item--primary menu-item--current">
+            <a href="http://extensions.atoum.org">
+                <img src="/assets/images/icon/puzzle.svg" />
+                extensions
+            </a>
+        </li>
+        <li>
+    <span>Official extensionsa</span>
+    <ul>
+                    <li><a  href="/extensions/autoloop">autoloop</a></li>
+                    <li><a  href="/extensions/bdd">bdd</a></li>
+                    <li><a  href="/extensions/blackfire">blackfire</a></li>
+                    <li><a  href="/extensions/config">config</a></li>
+                    <li><a  href="/extensions/deprecated">deprecated</a></li>
+                    <li><a  href="/extensions/json-schema">json-schema</a></li>
+                    <li><a  href="/extensions/phpunit">phpunit</a></li>
+                    <li><a  href="/extensions/prophecy">prophecy</a></li>
+                    <li><a  href="/extensions/reports">reports</a></li>
+                    <li><a class="active" href="/extensions/ruler">ruler</a></li>
+                    <li><a  href="/extensions/telemetry">telemetry</a></li>
+                    <li><a  href="/extensions/visibility">visibility</a></li>
+            </ul>
+    <span>Community extensions</span>
+    <ul>
+                    <li><a  href="/extensions/atoum-ide-helper">atoum-ide-helper</a></li>
+                    <li><a  href="/extensions/atoum-teamcity">atoum-teamcity</a></li>
+                    <li><a  href="/extensions/praspel">praspel</a></li>
+                    <li><a  href="/extensions/symfony-di">symfony-di</a></li>
+                    <li><a  href="/extensions/vw">vw</a></li>
+                    <li><a  href="/extensions/xml">xml</a></li>
+            </ul>
+</li>
+
+    </ul>
+</div>
+
+<div aria-controls="sidebar" onclick="toggleMenu(this)" class="atoum-menu--icon-container">
+    <svg viewBox="0 0 100 100" class="atoum-menu--icon">
+        <title>Open menu icon</title>
+        <desc>N-ARY CIRCLED PLUS OPERATOR</desc>
+
+        <circle cx="50" cy="50" r="40" />
+        <line x1="20" y1="50" x2="80" y2="50" transform="rotate(90 50 50)" />
+        <line x1="20" y1="50" x2="80" y2="50" />
+    </svg>
+</div>
+
+
+
+
+        <div class="main">
+            <div class="extension-content">
+                
+    <h1><a href="https://github.com/atoum/ruler-extension" class="github-link"><img src="/assets/github-icon.svg" /></a> atoum/ruler-extension <a href="https://travis-ci.org/atoum/ruler-extension"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Build Status" data-src="https://travis-ci.org/atoum/ruler-extension.svg?branch=master" onload="lzld(this)" /></a></h1>
+<p>This extension allows you to precisely filter test cases to run with a &quot;natural language&quot;.</p>
+<p>The extension adds a <code>--filter</code> option to atoum. This line now appears on the atoum help:</p>
+<pre><code>--filter: Filters tests to execute. For example 'not("featureA" in tags) and namespace = "foo\bar"'</code></pre>
+<p>You can now filter your tests using any <a href="https://github.com/hoaproject/Ruler">Hoa\Ruler filter</a>.</p>
+<h2>Example</h2>
+<pre><code>./vendor/bin/atoum -d tests --filter 'not("featureA" in tags) and namespace = "foo\bar"'</code></pre>
+<p>This will only launch test that are not tagged with &quot;featureA&quot; and have the <code>foo\bar</code> namespace.</p>
+<h2>Available filters</h2>
+<p>Those variables are available in the filter:</p>
+<ul>
+<li><code>method</code></li>
+<li><code>class</code></li>
+<li><code>namespace</code></li>
+<li><code>testedclass</code></li>
+<li><code>testedclassnamespace</code></li>
+<li><code>tags</code> (as an array)</li>
+<li><code>extensions</code> (as an array)</li>
+</ul>
+<h2>Install it</h2>
+<p>Install extension using <a href="https://getcomposer.org">composer</a>:</p>
+<pre><code>composer require --dev atoum/ruler-extension</code></pre>
+<p>The extension will be automatically loaded. If you ever want to unload it, you can add this to your configuration file:</p>
+<pre><code class="language-php">&lt;?php
+
+// .atoum.php
+
+use mageekguy\atoum\ruler;
+
+$runner-&gt;removeExtension(ruler\extension::class);</code></pre>
+<h2>Examples</h2>
+<h3>Filter on tags</h3>
+<p>Run all tests who have the <code>needsDatabase</code> tag:</p>
+<pre><code>./vendor/bin/atoum -d tests --filter 'tags contains "needsDatabase"'</code></pre>
+<p>Run all tests except those who have the <code>needsDatabase</code> tag:</p>
+<pre><code>./vendor/bin/atoum -d tests --filter 'not (tags contains "needsDatabase")'</code></pre>
+<p>You can also use the ruler's default <code>in</code> operator, but in that case that's less readable:</p>
+<pre><code>./vendor/bin/atoum -d tests --filter 'not ("needsDatabase" in tags)'</code></pre>
+<p>Read more about tags in <a href="http://docs.atoum.org/en/latest/launch_test.html?highlight=tags#tags">atoum's documentation</a>.</p>
+<h3>Filter on the test method name</h3>
+<p>Run all tests with a method named <code>testMethod1</code>:</p>
+<pre><code>./vendor/bin/atoum -d tests --filter 'method = "testMethod1'</code></pre>
+<p>Run all tests with a method named <code>testMethod1</code> (using an array representing a list of methods to filter):</p>
+<pre><code>./vendor/bin/atoum -d tests --filter 'method in ["testMethod1"]'</code></pre>
+<h3>Filter on the test classname</h3>
+<p>Run the test with the <code>mageekguy\atoum\ruler\tests\units\testClass1</code> classname:</p>
+<pre><code>./vendor/bin/atoum -d tests --filter 'class = "mageekguy\atoum\ruler\tests\units\testClass1'</code></pre>
+<h3>Filter on the test namespace</h3>
+<p>Run all tests in the <code>mageekguy\atoum\ruler\tests\units</code> namespace:</p>
+<pre><code>./vendor/bin/atoum -d tests --filter 'namespace = "mageekguy\atoum\ruler\tests\units'</code></pre>
+<h3>Filter on the tested class name</h3>
+<p>Run the tests that test the <code>mageekguy\atoum\ruler\testClass1</code> class:</p>
+<pre><code>./vendor/bin/atoum -d tests --filter 'testedclass = "mageekguy\atoum\ruler\testClass1'</code></pre>
+<h3>Filter on the tested class namespace</h3>
+<p>Run the tests that test the classes in the <code>mageekguy\atoum\ruler</code> namespace:</p>
+<pre><code>./vendor/bin/atoum -d tests --filter 'testedclassnamespace = "mageekguy\atoum\ruler'</code></pre>
+<h3>Filter on the test required extensions</h3>
+<p>Run all tests that needs the blackfire extension :</p>
+<pre><code>./vendor/bin/atoum -d tests --filter 'extensions contains "blackfire"'</code></pre>
+<p>You can also use the ruler's default <code>in</code> operator, but in that case that's less readable:</p>
+<pre><code>./vendor/bin/atoum -d tests --filter '"blackfire" in tags'</code></pre>
+<p>You can read more about the test required extensions in <a href="http://docs.atoum.org/en/latest/written_help.html#php-extensions">atoum's documentation</a>.</p>
+<h3>Apply multiple filters</h3>
+<p>You can also define more complex filters like this: Run all tests tagged <code>needsDatabase</code> and with method <code>testClass1</code> or with a method <code>testClass</code>:</p>
+<pre><code>./vendor/bin/atoum --filter '("needsDatabase" in tags and method = "testClass1") or (method = "testClass")'</code></pre>
+<h2>Links</h2>
+<ul>
+<li><a href="https://github.com/hoaproject/Ruler">Hoa\Ruler</a></li>
+<li><a href="http://hoa-project.net/En/Literature/Hack/Ruler.html">Hoa\Ruler's documentation</a></li>
+<li><a href="http://atoum.org">atoum</a></li>
+<li><a href="http://docs.atoum.org">atoum's documentation</a></li>
+</ul>
+<h2>License</h2>
+<p>ruler-extension is released under the MIT License. See the bundled LICENSE file for details.</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="atoum" data-src="http://atoum.org/images/logo/atoum.png" onload="lzld(this)" /></p>
+
+            </div>
+        </div>
+
+        <script src="/assets/js/main.bfce05ce.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+        <script type="text/javascript">
+    docsearch({
+        apiKey: '0f252c26c36d6ef21fb74be147e94b14',
+        indexName: 'atoum',
+        inputSelector: '#algolia-search',
+        algoliaOptions: { 'facetFilters': [["language:en", 'tags:extensions']] },
+        debug: false
+    });
+</script>
+
+    </body>
+</html>

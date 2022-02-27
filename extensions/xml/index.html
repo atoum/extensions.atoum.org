@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="/assets/js/critical.951e71c3.js"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>atoum&#039;s extensions</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
+        <link rel="stylesheet" href="/assets/css/main.6ae188f7.css" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+            <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-72192129-3', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    </head>
+    <body class="search-column">
+        <nav id="menu" class="atoum-menu--container atoum-menu--container__primary atoum-menu-desktop--primary">
+    <ul>
+        <li>
+            <a href="http://atoum.org/" id="nav-about">
+                <img src="/assets/images/icon/about.svg" />
+                about
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/features.html" id="nav-features">
+                <img src="/assets/images/icon/features.svg" />
+                features
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/sources.html" id="nav-source">
+                <img src="/assets/images/icon/source.svg" />
+                sources
+            </a>
+        </li>
+        <li>
+            <a href="http://docs.atoum.org/" id="nav-documentation">
+                <img src="/assets/images/icon/documentation.svg" />
+                documentation
+            </a>
+        </li>
+        <li>
+            <a href="http://atoum.org/news.html" id="nav-posts">
+                <img src="/assets/images/icon/news.svg" />
+                news
+            </a>
+        </li>
+        <li>
+            <a href="http://extensions.atoum.org" id="nav-extensions">
+                <img src="/assets/images/icon/puzzle.svg" />
+                extensions
+            </a>
+        </li>
+        <li>
+            <a href="https://dashboard.telemetry.atoum.org" id="nav-telemetry" target="telemetry">
+                <img src="/assets/images/icon/telemetry.svg" />
+                telemetry
+            </a>
+        </li>
+
+    </ul>
+</nav>
+
+
+<div class="atoum-menu-desktop--secondary extension-list">
+
+    <div class="secondary-menu-header">
+        <a class="secondary-menu-header--logo-link" href="/">
+            <img src="/assets/images/atoum.png"  width="61px" height="50px" class="secondary-menu-header--logo" />
+        </a>
+
+        <div class="secondary-menu-header--empty-translation-list"></div>
+
+        <input type="text" placeholder="Search" id="algolia-search" class="secondary-menu-header--search" onFocus="toggleSearch(true)" onBlur="toggleSearch(false)" />
+    </div>
+
+    <ul style="padding: 10px 0 0 0">
+        <li>
+    <span>Official extensionsa</span>
+    <ul>
+                    <li><a  href="/extensions/autoloop">autoloop</a></li>
+                    <li><a  href="/extensions/bdd">bdd</a></li>
+                    <li><a  href="/extensions/blackfire">blackfire</a></li>
+                    <li><a  href="/extensions/config">config</a></li>
+                    <li><a  href="/extensions/deprecated">deprecated</a></li>
+                    <li><a  href="/extensions/json-schema">json-schema</a></li>
+                    <li><a  href="/extensions/phpunit">phpunit</a></li>
+                    <li><a  href="/extensions/prophecy">prophecy</a></li>
+                    <li><a  href="/extensions/reports">reports</a></li>
+                    <li><a  href="/extensions/ruler">ruler</a></li>
+                    <li><a  href="/extensions/telemetry">telemetry</a></li>
+                    <li><a  href="/extensions/visibility">visibility</a></li>
+            </ul>
+    <span>Community extensions</span>
+    <ul>
+                    <li><a  href="/extensions/atoum-ide-helper">atoum-ide-helper</a></li>
+                    <li><a  href="/extensions/atoum-teamcity">atoum-teamcity</a></li>
+                    <li><a  href="/extensions/praspel">praspel</a></li>
+                    <li><a  href="/extensions/symfony-di">symfony-di</a></li>
+                    <li><a  href="/extensions/vw">vw</a></li>
+                    <li><a class="active" href="/extensions/xml">xml</a></li>
+            </ul>
+</li>
+
+    </ul>
+</div>
+
+<div class="atoum-menu--container atoum-menu--container__primary sidebar extension-list atoum-mobile-menu" id="sidebar">
+    <ul>
+        <li class="menu-item--brand">
+            <img src="http://atoum.org/images/logo/atoum.png"> atoum
+        </li>
+        <li id="nav-about" class="menu-item--primary" >
+            <a href="http://atoum.org/">
+                <img src="/assets/images/icon/about.svg"/>
+                about
+            </a>
+        </li>
+        <li id="nav-features" class="menu-item--primary">
+            <a href="http://atoum.org/features.html">
+                <img src="/assets/images/icon/features.svg" />
+                features
+            </a>
+        </li>
+        <li id="nav-source" class="menu-item--primary">
+            <a href="http://atoum.org/sources.html">
+                <img src="/assets/images/icon/source.svg" />
+                sources
+            </a>
+        </li>
+        <li id="nav-documentation" class="menu-item--primary">
+            <a href="http://docs.atoum.org/">
+                <img src="/assets/images/icon/documentation.svg" />
+                documentation
+            </a>
+        </li>
+        <li id="nav-posts" class="menu-item--primary">
+            <a href="http://atoum.org/news.html">
+                <img src="/assets/images/icon/news.svg" />
+                news
+            </a>
+        </li>
+        <li id="nav-telemetry" class="menu-item--primary">
+            <a href="https://dashboard.telemetry.atoum.org" target="telemetry">
+                <img src="/assets/images/icon/telemetry.svg" />
+                telemetry
+            </a>
+        </li>
+        <li id="nav-extensions" class="menu-item--primary menu-item--current">
+            <a href="http://extensions.atoum.org">
+                <img src="/assets/images/icon/puzzle.svg" />
+                extensions
+            </a>
+        </li>
+        <li>
+    <span>Official extensionsa</span>
+    <ul>
+                    <li><a  href="/extensions/autoloop">autoloop</a></li>
+                    <li><a  href="/extensions/bdd">bdd</a></li>
+                    <li><a  href="/extensions/blackfire">blackfire</a></li>
+                    <li><a  href="/extensions/config">config</a></li>
+                    <li><a  href="/extensions/deprecated">deprecated</a></li>
+                    <li><a  href="/extensions/json-schema">json-schema</a></li>
+                    <li><a  href="/extensions/phpunit">phpunit</a></li>
+                    <li><a  href="/extensions/prophecy">prophecy</a></li>
+                    <li><a  href="/extensions/reports">reports</a></li>
+                    <li><a  href="/extensions/ruler">ruler</a></li>
+                    <li><a  href="/extensions/telemetry">telemetry</a></li>
+                    <li><a  href="/extensions/visibility">visibility</a></li>
+            </ul>
+    <span>Community extensions</span>
+    <ul>
+                    <li><a  href="/extensions/atoum-ide-helper">atoum-ide-helper</a></li>
+                    <li><a  href="/extensions/atoum-teamcity">atoum-teamcity</a></li>
+                    <li><a  href="/extensions/praspel">praspel</a></li>
+                    <li><a  href="/extensions/symfony-di">symfony-di</a></li>
+                    <li><a  href="/extensions/vw">vw</a></li>
+                    <li><a class="active" href="/extensions/xml">xml</a></li>
+            </ul>
+</li>
+
+    </ul>
+</div>
+
+<div aria-controls="sidebar" onclick="toggleMenu(this)" class="atoum-menu--icon-container">
+    <svg viewBox="0 0 100 100" class="atoum-menu--icon">
+        <title>Open menu icon</title>
+        <desc>N-ARY CIRCLED PLUS OPERATOR</desc>
+
+        <circle cx="50" cy="50" r="40" />
+        <line x1="20" y1="50" x2="80" y2="50" transform="rotate(90 50 50)" />
+        <line x1="20" y1="50" x2="80" y2="50" />
+    </svg>
+</div>
+
+
+
+
+        <div class="main">
+            <div class="extension-content">
+                
+    <h1><a href="https://github.com/shulard/atoum-xml-extension" class="github-link"><img src="/assets/github-icon.svg" /></a> shulard/atoum-xml-extension <a href="https://travis-ci.org/shulard/atoum-xml-extension"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Build Status" data-src="https://travis-ci.org/shulard/atoum-xml-extension.svg?branch=master" onload="lzld(this)" /></a> <a href="https://packagist.org/packages/shulard/atoum-xml-extension"><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="Latest Stable Version" data-src="https://img.shields.io/packagist/v/shulard/atoum-xml-extension.svg" onload="lzld(this)" /></a></h1>
+<p>This atoum extension allows you to test XML document using <a href="https://github.com/atoum/atoum">atoum</a>. It's possible to execute
+xpath against the document or to validate it using DTD, XSD or RelaxNG schema. You can use it to validate HTML documents too.</p>
+<h2>Example</h2>
+<pre><code class="language-php">&lt;?php
+namespace shulard\example\xml;
+
+use atoum;
+
+class foo extends atoum\test
+{
+    public function testXMLDocument()
+    {
+        $xml = &lt;&lt;&lt;XML
+&lt;?xml version="1.0" ?&gt;
+&lt;root xmlns:atom="http://purl.org/atom/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"&gt;
+    &lt;atom:feed&gt;1&lt;dc:node&gt;namespaced content&lt;/dc:node&gt;2&lt;/atom:feed&gt;
+    &lt;node attribute="value" /&gt;
+    &lt;node m:attribute="namespaced value" /&gt;
+&lt;/root&gt;
+XML;
+
+        $this
+            -&gt;then
+                -&gt;xml($xml)
+                    -&gt;isValidAgainstSchema
+                        -&gt;dtd('file://path/to.dtd', 'root')
+                -&gt;node
+                    -&gt;hasNamespace('atom', 'http://purl.org/atom/ns#')
+                    -&gt;isUsedNamespace('dc', 'http://purl.org/dc/elements/1.1/')
+                    -&gt;withNamespace('m', 'http://purl.org/atom/ns#')
+                        -&gt;xpath('//m:feed')
+                            -&gt;hasSize(1)
+        ;
+    }
+}</code></pre>
+<p>When running this test, the XML document will be loaded and:</p>
+<ul>
+<li>Validate the document using a DTD;</li>
+<li>Check if <code>atom</code> namespace is present in document declaration;</li>
+<li>Check that <code>dc</code> namespace is used inside the document;</li>
+<li>Execute a xpath one namespaced node and check returning node collection.</li>
+</ul>
+<h2>Install it</h2>
+<p>Install extension using <a href="https://getcomposer.org">composer</a>:</p>
+<pre><code class="language-bash">composer require --dev shulard/atoum-xml-extension</code></pre>
+<p>Enable and configure the extension using atoum configuration file:</p>
+<pre><code class="language-php">&lt;?php
+
+// .atoum.php
+
+require_once __DIR__ . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+
+use mageekguy\atoum\xml;
+
+$runner-&gt;addExtension(new xml\extension($script));</code></pre>
+<h2>Use it</h2>
+<pre><code class="language-php">&lt;?php
+namespace shulard\example\xml;
+
+use atoum;
+
+class foo extends atoum\test
+{
+    /**
+     * Test attribute on nodes
+     */
+    public function testAttributes()
+    {
+        $xml = &lt;&lt;&lt;XML
+&lt;?xml version="1.0" ?&gt;
+&lt;root&gt;
+    &lt;node attribute="value" /&gt;
+    &lt;node m:attribute="namespaced value" /&gt;
+&lt;/root&gt;
+XML;
+
+        $node = $this-&gt;xml($xml)
+            -&gt;children
+            -&gt;item(0);
+        $node
+            -&gt;attributes()
+                -&gt;hasSize(1)
+                -&gt;string['attribute']-&gt;isEqualTo('value')
+        ;
+        $node
+            -&gt;attributes('m')
+                -&gt;hasSize(1)
+                -&gt;string['attribute']-&gt;isEqualTo('namespaced value')
+        ;
+    }
+
+    /**
+     * Test node content using phpString asserter
+     */
+    public function testXpathAndNodeContent()
+    {
+        $xml = &lt;&lt;&lt;XML
+&lt;?xml version="1.0" ?&gt;
+&lt;root&gt;
+    &lt;node attribute="value"&gt;content&lt;/node&gt;
+&lt;/root&gt;
+XML;
+
+        $this
+            -&gt;then
+                -&gt;xml($xml)
+                -&gt;xpath('//node')
+                    -&gt;hasSize(1)
+                    -&gt;item(0)
+                        -&gt;nodeValue-&gt;isEqualTo('content')
+        ;
+    }
+
+    /**
+     * Validate namespace on nodes
+     */
+    public function testNamespaces()
+    {
+        $xml = &lt;&lt;&lt;XML
+&lt;?xml version="1.0" ?&gt;
+&lt;root xmlns:atom="http://purl.org/atom/ns#" xmlns:toto="http://example.com" xmlns:dc="http://purl.org/dc/elements/1.1/"&gt;
+    &lt;atom:feed&gt;1&lt;dc:node&gt;namespaced content&lt;/dc:node&gt;2&lt;/atom:feed&gt;
+&lt;/root&gt;
+XML;
+
+        $this
+            -&gt;then
+                -&gt;xml($xml)
+                -&gt;hasNamespace('atom', 'http://purl.org/atom/ns#')
+                -&gt;isUsedNamespace('dc', 'http://purl.org/dc/elements/1.1/')
+                    -&gt;withNamespace('m', 'http://purl.org/atom/ns#')
+                    -&gt;xpath('//m:feed')
+                        -&gt;hasSize(1)
+                        -&gt;item(0)
+                            -&gt;xpath('./dc:node')
+                                -&gt;hasSize(1)
+                            -&gt;parent
+                                -&gt;xpath('//atom:feed')
+                                    -&gt;hasSize(1)
+                                    -&gt;item(0)
+                                        -&gt;nodeValue-&gt;isEqualTo("12")
+        ;
+    }
+
+    /**
+     * Validate document through schema (DTD, XSD, RNG)
+     */
+    public function testSchemaValidation()
+    {
+        $xml = &lt;&lt;&lt;XML
+&lt;?xml version="1.0" ?&gt;
+&lt;root&gt;
+    &lt;atom:feed&gt;1&lt;dc:node&gt;namespaced content&lt;/dc:node&gt;2&lt;/atom:feed&gt;
+&lt;/root&gt;
+XML;
+
+        $this
+            -&gt;then
+                -&gt;xml($xml)
+                    -&gt;isValidAgainstSchema
+                        -&gt;dtd('file://path/to.dtd', 'root')
+                -&gt;node
+                    -&gt;isValidAgainstSchema
+                        -&gt;schema('/path/to/schema.xsd')
+                -&gt;node
+                    -&gt;isValidAgainstSchema
+                        -&gt;relaxNg('/path/to/file.rng')
+        ;
+    }
+
+    /**
+     * You can also make tests on HTML Document
+     */
+    public function testOnHtmlDocument()
+    {
+        $this
+            -&gt;then
+                -&gt;html(file_get_contents('http://example.com'))
+                -&gt;xpath('//title')
+                    -&gt;item(0)
+                        -&gt;nodevalue
+                            -&gt;isEqualTo('My awesome title')
+                -&gt;xpath('//body/script')
+                    -&gt;last()
+                        -&gt;nodevalue
+                            -&gt;contains('GMTXXXXXX');
+        ;
+    }
+}</code></pre>
+<h2>Links</h2>
+<ul>
+<li><a href="http://atoum.org">atoum</a></li>
+<li><a href="http://docs.atoum.org">atoum's documentation</a></li>
+</ul>
+<h2>Licence</h2>
+<p>atoum-xml-extension is released under the Apache2 License. See the bundled <a href="https://github.com/shulard/atoum-xml-extension/blob/master/LICENSE">LICENSE</a> file for details.</p>
+<p><img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="atoum" data-src="http://atoum.org/images/logo/atoum.png" onload="lzld(this)" /></p>
+
+            </div>
+        </div>
+
+        <script src="/assets/js/main.bfce05ce.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"></script>
+        <script type="text/javascript">
+    docsearch({
+        apiKey: '0f252c26c36d6ef21fb74be147e94b14',
+        indexName: 'atoum',
+        inputSelector: '#algolia-search',
+        algoliaOptions: { 'facetFilters': [["language:en", 'tags:extensions']] },
+        debug: false
+    });
+</script>
+
+    </body>
+</html>
